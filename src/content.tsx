@@ -45,10 +45,7 @@ function Content() {
         <div className="text-xl md:text-3xl font-semibold">
           <p>About Me</p>
         </div>
-        {/* Add more about content here */}
       </section>
-
-      {/* You can add more sections like projects and contact here */}
 
       <Button toggled={toggled} setToggled={setToggled} />
     </>
