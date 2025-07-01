@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./navbar.css";
-import logo_w from "./assets/logo_w.png";
-import logo_b from "./assets/logo_b.png";
+// import logo_w from "./assets/logo_w.png";
+// import logo_b from "./assets/logo_b.png";
 import logo2_b from "./assets/logo2_b.png";
 import logo2_w from "./assets/logo2_w.png";
 
@@ -19,8 +19,8 @@ function Navbar({ toggled }: NavbarProps) {
   return (
     <nav
       className={`${
-        toggled ? "bg-white text-black" : "bg-black text-white"
-      } sticky top-6 z-50 backdrop-blur-md p-5 rounded-4xl mx-6 mt-4 transition-all duration-300`}
+        toggled ? "bg-white/30 text-black" : "bg-black/30 text-white"
+      } sticky top-6 z-50 backdrop-blur-md p-3 rounded-4xl mx-6 mt-4 transition-all duration-300`}
     >
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -34,7 +34,7 @@ function Navbar({ toggled }: NavbarProps) {
 
         {/* Desktop Navigation */}
         <div className="space-x-20 hidden lg:flex">
-          {["about", "skills", "projects", "contact"].map((section) => (
+          {["home", "about", "projects", "contact"].map((section) => (
             <a
               key={section}
               href={`#${section}`}
@@ -76,7 +76,7 @@ function Navbar({ toggled }: NavbarProps) {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden mt-5 px-4 pb-4 space-y-3">
-          {["about", "skills", "projects", "contact"].map((section) => (
+          {["home", "about", "projects", "contact"].map((section) => (
             <a
               key={section}
               href={`#${section}`}
