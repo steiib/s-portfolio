@@ -21,9 +21,9 @@ function Content() {
         id="home"
         className={`${
           toggled ? "text-black" : "text-white"
-        } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center md:max-w-3xl`}
+        } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center md:max-w-3xl md:pt-45 pt-25`}
       >
-        <p className="text-xl md:text-4xl font-bold mt-10">Hi, I'm</p>
+        <p className="text-xl md:text-4xl font-bold mt-8 md:mt-10">Hi, I'm</p>
         <img
           src={toggled ? topo_b : topo_w}
           alt="NameBG"
@@ -40,7 +40,7 @@ function Content() {
         id="about"
         className={`${
           toggled ? "text-black" : "text-white"
-        } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center mt-20 md:mt-40 md:max-w-4xl`}
+        } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center mt-15 md:mt-55 md:max-w-4xl`}
       >
         <div className="text-2xl md:text-4xl font-bold">
           <p>About Me</p>

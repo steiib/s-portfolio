@@ -20,7 +20,7 @@ function Navbar({ toggled }: NavbarProps) {
     <nav
       className={`${
         toggled ? "bg-white/30 text-black" : "bg-black/30 text-white"
-      } sticky top-6 z-50 backdrop-blur-md p-3 rounded-4xl mx-6 mt-4 transition-all duration-300`}
+      } fixed top-6 left-1/2 transform -translate-x-1/2 z-50 backdrop-blur-md p-3 rounded-4xl w-[95%] max-w-6xl transition-all duration-300`}
     >
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -33,7 +33,7 @@ function Navbar({ toggled }: NavbarProps) {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="space-x-20 hidden lg:flex">
+        <div className="space-x-20 items-center hidden lg:flex">
           {["home", "about", "projects", "contact"].map((section) => (
             <a
               key={section}
@@ -43,10 +43,21 @@ function Navbar({ toggled }: NavbarProps) {
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            download
+            className={`${
+              toggled
+                ? "border-black hover:bg-black hover:text-white"
+                : "border-white hover:bg-white hover:text-black"
+            } border-2 px-4 py-2 rounded-xl text-md font-semibold bg-transparent transition-colors duration-200`}
+          >
+            Download Resume
+          </a>
         </div>
 
         {/* Hamburger Icon */}
-        <div className="lg:hidden">
+        <div className="lg:hidden hover:text-gray-400 transition-colors">
           <button
             onClick={handleToggleMenu}
             className="p-1"
@@ -75,7 +86,7 @@ function Navbar({ toggled }: NavbarProps) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden mt-5 px-4 pb-4 space-y-3">
+        <div className=" lg:hidden flex flex-col items-center justify-center space-y-5 py-1">
           {["home", "about", "projects", "contact"].map((section) => (
             <a
               key={section}
@@ -86,6 +97,17 @@ function Navbar({ toggled }: NavbarProps) {
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            download
+            className={`${
+              toggled
+                ? "border-black hover:bg-black hover:text-white"
+                : "border-white hover:bg-white hover:text-black"
+            } border-2 px-3 py-1.5 rounded-xl text-lg font-semibold transition-colors duration-200`}
+          >
+            Download Resume
+          </a>
         </div>
       )}
     </nav>
