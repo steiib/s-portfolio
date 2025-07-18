@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Navbar from "./navbar";
 import Button from "./button";
-import topo_b from "./assets/topo_b.png";
-import topo_w from "./assets/topo_w.png";
+import Container from "./container";
+import Hero from "./hero";
 
 function Content() {
   const [toggled, setToggled] = useState<boolean>(false);
@@ -16,24 +16,8 @@ function Content() {
     <>
       <Navbar toggled={toggled} />
 
-      {/* Home Section */}
-      <section
-        id="home"
-        className={`${
-          toggled ? "text-black" : "text-white"
-        } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center md:max-w-3xl md:pt-45 pt-25`}
-      >
-        <p className="text-xl md:text-4xl font-bold mt-8 md:mt-10">Hi, I'm</p>
-        <img
-          src={toggled ? topo_b : topo_w}
-          alt="NameBG"
-          className="w-full h-auto mx-auto block md:mt-3 md:mb-3"
-        />
-        <div className="text-3xl md:text-6xl font-extrabold tracking-widest cursor-pointer hover:scale-120 transition-all">
-          <p>S T E V E</p>
-          <p>F A J I L A N</p>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <Hero toggled={toggled} />
 
       {/* About Section */}
       <section
@@ -42,10 +26,10 @@ function Content() {
           toggled ? "text-black" : "text-white"
         } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center mt-15 md:mt-55 md:max-w-4xl`}
       >
-        <div className="text-2xl md:text-4xl font-bold">
+        <div className="text-3xl md:text-5xl font-bold">
           <p>About Me</p>
         </div>
-        <div className="text-sm md:text-2xl font-light mt-4 md:mt-8">
+        <div className="text-sm md:text-2xl font-light mt-5 md:mt-10">
           <p>
             I am a 4th-year Computer Engineering student at FEU Institute of
             Technology. I enjoy working on the creative side of software
@@ -53,8 +37,86 @@ function Content() {
             design and user experience.
           </p>
         </div>
-        <div className="md:text-3xl mt-8 md:mt-16 font-semibold">
+
+        {/* Languages */}
+        <div className="md:text-4xl mt-15 md:mt-30 font-bold">
           <p>Languages</p>
+        </div>
+        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(168,135,0),_transparent_75%)] bg-no-repeat">
+          <Container toggled={toggled}>
+            <div className="flex justify-center items-center gap-5 md:gap-10">
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/html5/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/html5/plain.svg?color=%23FFFFFF"
+                }
+                alt="HTML5 Icon"
+                className="w-8 md:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/css3/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/css3/plain.svg?color=%23FFFFFF"
+                }
+                alt="CSS3 Icon"
+                className="w-8 md:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/cplusplus/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/cplusplus/plain.svg?color=%23FFFFFF"
+                }
+                alt="CPP Icon"
+                className="w-8 md:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/java/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/java/plain.svg?color=%23FFFFFF"
+                }
+                alt="JAVA Icon"
+                className="w-8 md:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/python/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/python/plain.svg?color=%23FFFFFF"
+                }
+                alt="PYTHON Icon"
+                className="w-8 md:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/javascript/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/javascript/plain.svg?color=%23FFFFFF"
+                }
+                alt="JAVASCRIPT Icon"
+                className="w-8 md:w-16 hover:scale-120 transition-all"
+              />
+            </div>
+          </Container>
+        </div>
+
+        {/* Frameworks */}
+        <div className="md:text-4xl mt-8 md:mt-15 font-bold">
+          <p>Frameworks</p>
+        </div>
+        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(22,103,135),_transparent_75%)] bg-no-repeat">
+          <Container toggled={toggled} />
+        </div>
+
+        {/* Tools */}
+        <div className="md:text-4xl mt-8 md:mt-15 font-bold">
+          <p>Tools</p>
+        </div>
+        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(87,23,18),_transparent_75%)] bg-no-repeat">
+          <Container toggled={toggled} />
         </div>
       </section>
 
