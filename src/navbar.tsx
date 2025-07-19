@@ -28,7 +28,7 @@ function Navbar({ toggled }: NavbarProps) {
           <img
             src={toggled ? logo2_b : logo2_w}
             alt="Logo"
-            className="w-13 h-auto md:w-18"
+            className="w-13 h-auto lg:w-18"
           />
         </div>
 

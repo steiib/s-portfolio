@@ -24,12 +24,12 @@ function Content() {
         id="about"
         className={`${
           toggled ? "text-black" : "text-white"
-        } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center mt-15 md:mt-55 md:max-w-4xl`}
+        } scroll-mt-30 lg:scroll-mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
-        <div className="text-3xl md:text-5xl font-bold">
+        <div className="text-3xl lg:text-5xl font-bold">
           <p>About Me</p>
         </div>
-        <div className="text-sm md:text-2xl font-light mt-5 md:mt-10">
+        <div className="text-md lg:text-2xl font-light mt-5 lg:mt-10">
           <p>
             I am a 4th-year Computer Engineering student at FEU Institute of
             Technology. I enjoy working on the creative side of software
@@ -39,12 +39,12 @@ function Content() {
         </div>
 
         {/* Languages */}
-        <div className="md:text-4xl mt-15 md:mt-30 font-bold">
+        <div className="lg:text-4xl mt-12 lg:mt-24 font-bold">
           <p>Languages</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(168,135,0),_transparent_75%)] bg-no-repeat">
           <Container toggled={toggled}>
-            <div className="flex justify-center items-center gap-5 md:gap-10">
+            <div className="flex justify-center items-center gap-5 lg:gap-10">
               <img
                 src={
                   toggled
@@ -52,7 +52,7 @@ function Content() {
                     : "https://devicon-website.vercel.app/api/html5/plain.svg?color=%23FFFFFF"
                 }
                 alt="HTML5 Icon"
-                className="w-8 md:w-16 hover:scale-120 transition-all"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
                 src={
@@ -61,7 +61,7 @@ function Content() {
                     : "https://devicon-website.vercel.app/api/css3/plain.svg?color=%23FFFFFF"
                 }
                 alt="CSS3 Icon"
-                className="w-8 md:w-16 hover:scale-120 transition-all"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
                 src={
@@ -70,7 +70,7 @@ function Content() {
                     : "https://devicon-website.vercel.app/api/cplusplus/plain.svg?color=%23FFFFFF"
                 }
                 alt="CPP Icon"
-                className="w-8 md:w-16 hover:scale-120 transition-all"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
                 src={
@@ -79,7 +79,7 @@ function Content() {
                     : "https://devicon-website.vercel.app/api/java/plain.svg?color=%23FFFFFF"
                 }
                 alt="JAVA Icon"
-                className="w-8 md:w-16 hover:scale-120 transition-all"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
                 src={
@@ -88,7 +88,7 @@ function Content() {
                     : "https://devicon-website.vercel.app/api/python/plain.svg?color=%23FFFFFF"
                 }
                 alt="PYTHON Icon"
-                className="w-8 md:w-16 hover:scale-120 transition-all"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
                 src={
@@ -97,14 +97,14 @@ function Content() {
                     : "https://devicon-website.vercel.app/api/javascript/plain.svg?color=%23FFFFFF"
                 }
                 alt="JAVASCRIPT Icon"
-                className="w-8 md:w-16 hover:scale-120 transition-all"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
             </div>
           </Container>
         </div>
 
         {/* Frameworks */}
-        <div className="md:text-4xl mt-8 md:mt-15 font-bold">
+        <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
           <p>Frameworks</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(22,103,135),_transparent_75%)] bg-no-repeat">
@@ -112,7 +112,7 @@ function Content() {
         </div>
 
         {/* Tools */}
-        <div className="md:text-4xl mt-8 md:mt-15 font-bold">
+        <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
           <p>Tools</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(87,23,18),_transparent_75%)] bg-no-repeat">

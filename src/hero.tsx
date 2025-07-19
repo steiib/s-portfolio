@@ -33,14 +33,14 @@ function Hero({ toggled }: HeroProps) {
       id="home"
       className={`${
         toggled ? "text-black" : "text-white"
-      } scroll-mt-40 w-11/12 max-w-sm mx-auto text-center md:max-w-3xl md:pt-45 pt-25`}
+      } min-h-screen flex flex-col justify-center items-center max-w-sm lg:max-w-3xl mx-auto text-center`}
     >
-      <div className="hover:scale-105 hover:tracking-widest transition-all duration-300 cursor-default">
-        <p className="text-xl md:text-4xl font-bold mt-8 md:mt-16">Hi, I'm</p>
+      <div className="hover:scale-110 hover:tracking-widest transition-all duration-300 cursor-default">
+        <p className="text-2xl lg:text-5xl font-bold mt-8 lg:mt-16">Hi, I'm</p>
         <div
           onMouseMove={handleMouseMove}
           onMouseLeave={resetTransform}
-          className="w-full h-auto mx-auto block md:mt-3 md:mb-3 transition-transform duration-50"
+          className="w-full h-auto mx-auto block lg:mt-3 lg:mb-3 transition-transform duration-50"
           style={{ transform: transformStyle }}
         >
           <img
@@ -50,7 +50,7 @@ function Hero({ toggled }: HeroProps) {
           />
         </div>
 
-        <div className="text-3xl md:text-6xl font-extrabold tracking-widest">
+        <div className="text-3xl lg:text-7xl font-extrabold tracking-widest">
           <p>S T E V E</p>
           <p>F A J I L A N</p>
         </div>
