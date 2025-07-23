@@ -69,7 +69,7 @@ function Content() {
                     ? "https://devicon-website.vercel.app/api/cplusplus/plain.svg?color=%23000000"
                     : "https://devicon-website.vercel.app/api/cplusplus/plain.svg?color=%23FFFFFF"
                 }
-                alt="CPP Icon"
+                alt="C++ Icon"
                 className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
@@ -78,7 +78,7 @@ function Content() {
                     ? "https://devicon-website.vercel.app/api/java/plain.svg?color=%23000000"
                     : "https://devicon-website.vercel.app/api/java/plain.svg?color=%23FFFFFF"
                 }
-                alt="JAVA Icon"
+                alt="Java Icon"
                 className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
@@ -87,7 +87,7 @@ function Content() {
                     ? "https://devicon-website.vercel.app/api/python/plain.svg?color=%23000000"
                     : "https://devicon-website.vercel.app/api/python/plain.svg?color=%23FFFFFF"
                 }
-                alt="PYTHON Icon"
+                alt="Python Icon"
                 className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
               <img
@@ -96,7 +96,7 @@ function Content() {
                     ? "https://devicon-website.vercel.app/api/javascript/plain.svg?color=%23000000"
                     : "https://devicon-website.vercel.app/api/javascript/plain.svg?color=%23FFFFFF"
                 }
-                alt="JAVASCRIPT Icon"
+                alt="JavaScript Icon"
                 className="w-8 lg:w-16 hover:scale-120 transition-all"
               />
             </div>
@@ -105,10 +105,40 @@ function Content() {
 
         {/* Frameworks */}
         <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
-          <p>Frameworks</p>
+          <p>Frameworks / Libraries</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(22,103,135),_transparent_75%)] bg-no-repeat">
-          <Container toggled={toggled} />
+          <Container toggled={toggled}>
+            <div className="flex justify-center items-center gap-5 lg:gap-10">
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/react/original.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/react/original.svg?color=%23FFFFFF"
+                }
+                alt="React Icon"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/tailwindcss/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/tailwindcss/plain.svg?color=%23FFFFFF"
+                }
+                alt="Tailwind Icon"
+                className="w-8 lg:w-16 hover:scale-130 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/nodejs/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/nodejs/plain.svg?color=%23FFFFFF"
+                }
+                alt="NodeJS Icon"
+                className="w-8 lg:w-16 hover:scale-125 transition-all"
+              />
+            </div>
+          </Container>
         </div>
 
         {/* Tools */}
@@ -116,7 +146,54 @@ function Content() {
           <p>Tools</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(87,23,18),_transparent_75%)] bg-no-repeat">
-          <Container toggled={toggled} />
+          <Container toggled={toggled}>
+            <div className="flex justify-center items-center gap-5 lg:gap-10">
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/bash/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/bash/plain.svg?color=%23FFFFFF"
+                }
+                alt="Bash Icon"
+                className="w-8 lg:w-16 hover:scale-125 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/git/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/git/plain.svg?color=%23FFFFFF"
+                }
+                alt="Git Icon"
+                className="w-8 lg:w-16 hover:scale-120 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/github/original.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/github/original.svg?color=%23FFFFFF"
+                }
+                alt="Github Icon"
+                className="w-8 lg:w-16 hover:scale-125 transition-all"
+              />
+              <img
+                src={
+                  toggled
+                    ? "https://devicon-website.vercel.app/api/figma/plain.svg?color=%23000000"
+                    : "https://devicon-website.vercel.app/api/figma/plain.svg?color=%23FFFFFF"
+                }
+                alt="Figma Icon"
+                className="w-8 lg:w-16 hover:scale-125 transition-all"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-plain.svg"
+                style={{
+                  filter: toggled ? "none" : "brightness(0) invert(1)",
+                }}
+                alt="Vite Icon"
+                className="w-8 lg:w-16 hover:scale-125 transition-all"
+              />
+            </div>
+          </Container>
         </div>
       </section>
 
