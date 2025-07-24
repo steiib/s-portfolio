@@ -3,6 +3,8 @@ import Navbar from "./navbar";
 import Button from "./button";
 import Container from "./container";
 import Hero from "./hero";
+import fourtitude_1 from "./assets/fourtitude_1.png";
+import fourtitude_2 from "./assets/fourtitude_2.png";
 
 function Content() {
   const [toggled, setToggled] = useState(false);
@@ -54,7 +56,7 @@ function Content() {
           <p>Languages</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(168,135,0),_transparent_75%)] bg-no-repeat">
-          <Container toggled={toggled}>
+          <Container toggled={toggled} height="h-20 lg:h-35">
             <div className="flex justify-center items-center gap-5 lg:gap-10">
               {devIcon(
                 "https://devicon-website.vercel.app/api/html5/plain.svg",
@@ -89,7 +91,7 @@ function Content() {
           <p>Frameworks / Libraries</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(22,103,135),_transparent_75%)] bg-no-repeat">
-          <Container toggled={toggled}>
+          <Container toggled={toggled} height="h-20 lg:h-35">
             <div className="flex justify-center items-center gap-5 lg:gap-10">
               {devIcon(
                 "https://devicon-website.vercel.app/api/react/original.svg",
@@ -112,7 +114,7 @@ function Content() {
           <p>Tools</p>
         </div>
         <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(87,23,18),_transparent_75%)] bg-no-repeat">
-          <Container toggled={toggled}>
+          <Container toggled={toggled} height="h-20 lg:h-35">
             <div className="flex justify-center items-center gap-5 lg:gap-10">
               {devIcon(
                 "https://devicon-website.vercel.app/api/bash/plain.svg",
@@ -150,8 +152,34 @@ function Content() {
           textColor
         } mt-20 lg:mt-40 scroll-mt-30 lg:scroll-mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
-        <div className="text-3xl lg:text-5xl font-bold">
+        <div className="text-3xl lg:text-5xl font-bold mb-7 lg:mb-14">
           <p>Projects</p>
+        </div>
+        <div className="relative rounded-xl bg-[radial-gradient(circle_at_center_250%,_rgba(191,49,44,1),_transparent_80%)] bg-no-repeat">
+          <Container toggled={toggled} height="h-40 lg:h-80">
+            <div className="absolute top-5 left-5 lg:top-10 lg:left-10 text-left">
+              <p className="text-md lg:text-3xl font-semibold">
+                Fourtitude Garage
+              </p>
+              <p className="text-xs lg:text-lg mt-1 lg:mt-2 font-light w-30 lg:w-60">
+                Automobile Shop Point-of-Sale (POS) System
+              </p>
+            </div>
+          </Container>
+
+          {/* Project Images */}
+          <div className="absolute top-28 lg:top-45 left-5 lg:left-10 flex gap-5 lg:gap-10">
+            <img
+              src={fourtitude_1}
+              alt="Fourtitude 1"
+              className="w-80 lg:w-160 rounded-sm"
+            />
+            <img
+              src={fourtitude_2}
+              alt="Fourtitude 2"
+              className="w-80 lg:w-160 rounded-sm"
+            />
+          </div>
         </div>
       </section>
       <Button toggled={toggled} setToggled={setToggled} />
