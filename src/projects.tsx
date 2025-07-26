@@ -6,6 +6,7 @@ interface ProjectProps {
   description: string;
   images: string[];
   toggled: boolean;
+  gradientColor: string;
 }
 
 function Projects({
@@ -14,13 +15,19 @@ function Projects({
   description,
   images,
   toggled,
+  gradientColor,
 }: ProjectProps) {
+  const background = `radial-gradient(circle at center 250%, rgba(${gradientColor}), transparent 80%)`;
+
   return (
-    <div className="relative rounded-xl bg-[radial-gradient(circle_at_center_250%,_rgba(191,49,44,1),_transparent_80%)] bg-no-repeat">
+    <div
+      className="relative rounded-xl bg-no-repeat"
+      style={{ backgroundImage: background }}
+    >
       <Container toggled={toggled} height="h-50 lg:h-80">
         <div className="relative w-full h-full">
           {/* Title and Subtitle */}
-          <div className="absolute top-2 left-2 lg:top-8 lg:left-10 text-left">
+          <div className="absolute top-2 left-2 lg:top-9 lg:left-8 text-left">
             <p className="text-md lg:text-3xl font-semibold">{title}</p>
             <p className="text-xs lg:text-lg mt-0 lg:mt-2 font-light w-30 lg:w-60">
               {subtitle}
@@ -28,20 +35,19 @@ function Projects({
           </div>
 
           {/* Description */}
-          <div className="absolute top-4 right-2 lg:top-9 lg:right-3 text-left w-42 lg:w-118">
+          <div className="absolute top-3 right-2 lg:top-10 lg:right-8 text-left w-42 lg:w-120">
             <p className="text-xs lg:text-lg font-medium">{description}</p>
           </div>
         </div>
       </Container>
-
       {/* Project Images */}
-      <div className="absolute top-40 lg:top-55 left-5 lg:left-10 flex gap-5 lg:gap-10">
+      <div className="absolute top-43 lg:top-50 left-5 lg:left-8 flex gap-3 lg:gap-6">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`${title} Preview ${index + 1}`}
-            className="w-70 lg:w-170 rounded-xs hover:scale-105 transition-all"
+            className="w-70 lg:w-170 rounded-xs  brightness-80 hover:brightness-100 hover:scale-105 duration-200 transition-all"
           />
         ))}
       </div>

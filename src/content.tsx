@@ -122,7 +122,7 @@ function Content() {
         <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
           <p>Tools</p>
         </div>
-        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(87,23,18),_transparent_75%)] bg-no-repeat">
+        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(255,255,255),_transparent_75%)] bg-no-repeat">
           <Container toggled={toggled} height="h-20 lg:h-35">
             <div className="flex justify-center items-center gap-5 lg:gap-10">
               {devIcon(
@@ -166,7 +166,7 @@ function Content() {
         id="projects"
         className={`${
           textColor
-        } mt-25 lg:mt-50 scroll-mt-25 lg:scroll-mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
+        } mt-20 lg:mt-40 scroll-mt-25 lg:scroll-mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
         <div className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-16">
           <p>Projects</p>
@@ -177,19 +177,21 @@ function Content() {
           <ProjectCard
             title="Fourtitude Garage"
             subtitle="Automobile Shop Point-of-Sale (POS) System"
-            description="Fourtitude Garage is a point-of-sale system for managing car purchases, rentals, and services. Developed as a final project for our Data Structures and Algorithms / Database course."
+            description="A point-of-sale system for managing car purchases, rentals, and services. Developed as a final project for our Data Structures and Algorithms / Database course."
             images={[fourtitude_1, fourtitude_2]}
             toggled={toggled}
+            gradientColor="191,49,44"
           />
         </div>
         {/* Project 2 */}
         <div className="relative mb-45 lg:mb-90">
           <ProjectCard
             title="PALengke"
-            subtitle="Project Subtitle"
-            description="Brief project description....."
+            subtitle="Wet & Dry Market Waypoint Navigation System"
+            description="A wayfinding system that helps public market customers locate products, compare prices, and navigate to stores. Developed as a final project for our Software Design course."
             images={[palengke_1, palengke_2]}
             toggled={toggled}
+            gradientColor="29,103,112"
           />
         </div>
       </section>
