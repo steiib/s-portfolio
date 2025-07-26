@@ -46,7 +46,7 @@ function Hero({ toggled }: HeroProps) {
           <img
             src={toggled ? topo_b : topo_w}
             alt="NameBG"
-            className="w-full h-auto mx-auto pointer-events-none"
+            className="w-full h-auto mx-auto pointer-events-none rounded-sm"
           />
         </div>
 
