@@ -64,7 +64,7 @@ function Content() {
         <div className="lg:text-4xl mt-11 lg:mt-21 font-bold">
           <p>Languages</p>
         </div>
-        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(168,135,0),_transparent_75%)] bg-no-repeat">
+        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(255,255,255),_transparent_75%)] bg-no-repeat">
           <Container toggled={toggled} height="h-20 lg:h-35">
             <div className="flex justify-center items-center gap-5 lg:gap-10">
               {devIcon(
@@ -99,7 +99,7 @@ function Content() {
         <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
           <p>Frameworks / Libraries</p>
         </div>
-        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(22,103,135),_transparent_75%)] bg-no-repeat">
+        <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(255,255,255),_transparent_75%)] bg-no-repeat">
           <Container toggled={toggled} height="h-20 lg:h-35">
             <div className="flex justify-center items-center gap-5 lg:gap-10">
               {devIcon(
@@ -173,7 +173,7 @@ function Content() {
         </div>
 
         {/* Project 1 */}
-        <div className="relative mb-45 lg:mb-90">
+        <div className="relative mb-50 lg:mb-90">
           <ProjectCard
             title="Fourtitude Garage"
             subtitle="Automobile Shop Point-of-Sale (POS) System"
@@ -184,7 +184,7 @@ function Content() {
           />
         </div>
         {/* Project 2 */}
-        <div className="relative mb-45 lg:mb-90">
+        <div className="relative mb-50 lg:mb-90">
           <ProjectCard
             title="PALengke"
             subtitle="Wet & Dry Market Waypoint Navigation System"

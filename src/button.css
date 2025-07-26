@@ -24,7 +24,8 @@ body.bg-toggled {
 
 /* On / Off toggle */
 .toggle-btn {
-  background-color: #292929;
+  background: rgba(66, 66, 66, 0.4);
+  backdrop-filter: blur(8px);
   border-radius: 99px;
   width: 90px;
   height: 50px;
@@ -57,7 +58,8 @@ body.bg-toggled {
 }
 
 .toggle-btn.toggled {
-  background-color: #e9e9e9;
+  background: rgba(196, 196, 196, 0.4);
+  backdrop-filter: blur(8px);
 }
 
 .toggle-btn.toggled .thumb {

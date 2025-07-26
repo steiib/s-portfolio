@@ -27,7 +27,7 @@ function Projects({
       <Container toggled={toggled} height="h-50 lg:h-80">
         <div className="relative w-full h-full">
           {/* Title and Subtitle */}
-          <div className="absolute top-2 left-2 lg:top-9 lg:left-8 text-left">
+          <div className="absolute top-1 left-2 lg:top-9 lg:left-8 text-left">
             <p className="text-md lg:text-3xl font-semibold">{title}</p>
             <p className="text-xs lg:text-lg mt-0 lg:mt-2 font-light w-30 lg:w-60">
               {subtitle}
@@ -35,7 +35,7 @@ function Projects({
           </div>
 
           {/* Description */}
-          <div className="absolute top-3 right-2 lg:top-10 lg:right-8 text-left w-42 lg:w-120">
+          <div className="absolute top-2 right-2 lg:top-10 lg:right-8 text-left w-42 lg:w-120">
             <p className="text-xs lg:text-lg font-medium">{description}</p>
           </div>
         </div>
@@ -47,7 +47,7 @@ function Projects({
             key={index}
             src={src}
             alt={`${title} Preview ${index + 1}`}
-            className="w-70 lg:w-170 rounded-xs  brightness-80 hover:brightness-100 hover:scale-105 duration-200 transition-all"
+            className="w-80 lg:w-170 rounded-xs  brightness-80 hover:brightness-100 hover:scale-105 duration-200 transition-all"
           />
         ))}
       </div>
