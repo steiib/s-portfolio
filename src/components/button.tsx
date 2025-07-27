@@ -9,16 +9,15 @@ interface ButtonProps {
 
 function Button({ toggled, setToggled }: ButtonProps) {
   return (
-    <div className="Button">
-      <button
-        className={`toggle-btn ${toggled ? "toggled" : ""}`}
-        onClick={() => setToggled(!toggled)}
-      >
-        <div className="thumb">
-          <img src={toggled ? nightIcon : dayIcon} alt="Mode Icon" />
-        </div>
-      </button>
-    </div>
+    <button
+      className={`toggle-btn ${toggled ? "toggled" : ""}`}
+      onClick={() => setToggled(!toggled)}
+      aria-label="Toggle theme"
+    >
+      <div className="thumb">
+        <img src={toggled ? nightIcon : dayIcon} alt="Mode Icon" />
+      </div>
+    </button>
   );
 }
 
