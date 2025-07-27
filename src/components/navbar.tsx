@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./navbar.css";
-// import logo_w from "./assets/logo_w.png";
-// import logo_b from "./assets/logo_b.png";
-import logo2_b from "./assets/logo2_b.png";
-import logo2_w from "./assets/logo2_w.png";
+import "../styles/navbar.css";
+// import logo_w from "./images/logo_w.png";
+// import logo_b from "./images/logo_b.png";
+import logo2_b from "../images/logo2_b.png";
+import logo2_w from "../images/logo2_w.png";
 
 interface NavbarProps {
   toggled: boolean;

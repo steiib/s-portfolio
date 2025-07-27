@@ -1,6 +1,6 @@
 import { useState } from "react";
-import topo_b from "./assets/topo_b.png";
-import topo_w from "./assets/topo_w.png";
+import topo_b from "../images/topo_b.png";
+import topo_w from "../images/topo_w.png";
 
 interface HeroProps {
   toggled: boolean;
@@ -50,6 +50,7 @@ function Hero({ toggled }: HeroProps) {
           />
         </div>
 
+        {/* Name Placeholder */}
         <div className="text-3xl lg:text-7xl font-extrabold tracking-widest">
           <p>S T E V E</p>
           <p>F A J I L A N</p>

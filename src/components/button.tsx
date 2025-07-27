@@ -1,6 +1,6 @@
-import "./Button.css";
-import nightIcon from "./assets/night.png";
-import dayIcon from "./assets/day.png";
+import "../styles/Button.css";
+import nightIcon from "../images/night.png";
+import dayIcon from "../images/day.png";
 
 interface ButtonProps {
   toggled: boolean;
