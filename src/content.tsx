@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Navbar from "./components/navbar";
-import Button from "./components/button";
+import Button from "./components/daynight_button";
 import Hero from "./components/hero";
 import About from "./components/about";
 import Projects from "./components/projects";
@@ -21,14 +21,15 @@ function Content() {
       <Navbar toggled={toggled} />
 
       {/* Hero Section */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <Hero toggled={toggled} />
-      </motion.div>
-
+      <div className="select-none">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <Hero toggled={toggled} />
+        </motion.div>
+      </div>
       {/* About Section */}
       <section
         id="about"

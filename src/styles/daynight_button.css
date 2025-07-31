@@ -1,9 +1,9 @@
 body.bg-default {
-  background-color: #000000;
+  background-color: #0c0c0c;
 }
 
 body.bg-toggled {
-  background-color: #ffffff;
+  background-color: #f3f4f6;
 }
 
 .bg-default,
@@ -18,28 +18,22 @@ body.bg-toggled {
 /* On / Off toggle */
 .toggle-btn {
   background: rgba(66, 66, 66, 0.4);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   border-radius: 99px;
-  width: 90px;
-  height: 50px;
   transition:
     background-color 0.1s ease,
     border-color 0.2s ease;
   cursor: pointer;
   position: fixed;
-  bottom: 15px;
-  right: 30px;
 }
 
 .toggle-btn .thumb {
-  height: 35px;
-  width: 35px;
-  background-color: #000000;
+  background-color: #0c0c0c;
   border-radius: 99px;
   transform: translateX(0);
   transition: left 0.15s ease;
   position: absolute;
-  left: 9px;
+  left: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -52,11 +46,11 @@ body.bg-toggled {
 
 .toggle-btn.toggled {
   background: rgba(196, 196, 196, 0.4);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
 }
 
 .toggle-btn.toggled .thumb {
-  background-color: #ffffff;
+  background-color: #f3f4f6;
 }
 
 .toggled-btn:hover {
@@ -64,5 +58,5 @@ body.bg-toggled {
 }
 
 .toggle-btn.toggled .thumb {
-  left: calc(50px - 5px);
+  left: calc(50px - 13px);
 }
