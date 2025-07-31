@@ -8,6 +8,12 @@ interface AboutProps {
 const About = ({ toggled }: AboutProps) => {
   const iconColor = toggled ? "%23000000" : "%23FFFFFF";
 
+  const ContainerProps = {
+    toggled,
+    height: "h-20 lg:h-35",
+    rounded: "rounded-3xl",
+  };
+
   const devIcon = (src: string, label: string) => (
     <div className="flex flex-col items-center justify-center group relative">
       <img
@@ -54,7 +60,7 @@ const About = ({ toggled }: AboutProps) => {
       <div className="lg:text-4xl mt-11 lg:mt-21 font-bold">
         <p>Languages</p>
       </div>
-      <Container toggled={toggled} height="h-20 lg:h-35">
+      <Container {...ContainerProps}>
         {Motion(
           <div className="flex justify-center items-center gap-5 lg:gap-10">
             {devIcon(
@@ -89,7 +95,7 @@ const About = ({ toggled }: AboutProps) => {
       <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
         <p>Frameworks / Libraries</p>
       </div>
-      <Container toggled={toggled} height="h-20 lg:h-35">
+      <Container {...ContainerProps}>
         {Motion(
           <div className="flex justify-center items-center gap-5 lg:gap-10">
             {devIcon(
@@ -129,7 +135,7 @@ const About = ({ toggled }: AboutProps) => {
       <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
         <p>Tools</p>
       </div>
-      <Container toggled={toggled} height="h-20 lg:h-35">
+      <Container {...ContainerProps}>
         {Motion(
           <div className="flex justify-center items-center gap-5 lg:gap-10">
             {devIcon(

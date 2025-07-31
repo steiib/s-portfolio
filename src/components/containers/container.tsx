@@ -1,13 +1,19 @@
 interface ContainerProps {
   toggled: boolean;
   height?: string;
+  rounded?: string;
   children?: React.ReactNode;
 }
 
-function Container({ toggled, height = "", children }: ContainerProps) {
+function Container({
+  toggled,
+  height = "",
+  rounded = "",
+  children,
+}: ContainerProps) {
   return (
     <div
-      className={`${toggled ? "bg-[#0c0c0c]/3" : "bg-[#f3f4f6]/3"} bg-no-repeat backdrop-blur-md w-auto shadow-md mx-auto mt-3 lg:mt-6 rounded-2xl p-4 flex justify-center items-center ${height}`}
+      className={`${toggled ? "bg-[#0c0c0c]/2" : "bg-[#f3f4f6]/2"} bg-no-repeat backdrop-blur-md w-auto shadow-md mx-auto mt-3 lg:mt-6 p-4 flex justify-center items-center ${rounded} ${height}`}
     >
       {children}
     </div>

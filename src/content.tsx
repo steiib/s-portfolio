@@ -25,7 +25,7 @@ function Content() {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
           <Hero toggled={toggled} />
         </motion.div>
@@ -35,7 +35,7 @@ function Content() {
         id="about"
         className={`${
           textColor
-        } scroll-mt-25 lg:scroll-mt-30 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
+        } scroll-mt-25 lg:scroll-mt-35 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
         <About toggled={toggled} />
       </section>
@@ -45,7 +45,7 @@ function Content() {
         id="projects"
         className={`${
           textColor
-        } scroll-mt-25 lg:scroll-mt-30 mt-20 lg:mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
+        } scroll-mt-25 lg:scroll-mt-35 mt-20 lg:mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
         <Projects toggled={toggled} />
       </section>

@@ -35,17 +35,17 @@ function Hero({ toggled }: HeroProps) {
     <section
       id="home"
       className={`${
-        toggled ? "text-black" : "text-white"
-      } min-h-screen flex flex-col justify-center items-center max-w-sm lg:max-w-5xl mx-auto text-center`}
+        toggled ? "text-[#182529]" : "text-[#ffffff]"
+      } min-h-screen flex flex-col justify-center items-center max-w-lg lg:max-w-5xl mx-auto text-center`}
     >
       <div className="hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
         {/* Top Text */}
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
-          <p className="text-2xl lg:text-5xl font-bold mt-8 lg:mt-16">
+          <p className="text-lg lg:text-5xl font-medium mt-5 lg:mt-10">
             Hi, I'm
           </p>
         </motion.div>
@@ -53,7 +53,7 @@ function Hero({ toggled }: HeroProps) {
         <div
           onMouseMove={handleMouseMove}
           onMouseLeave={resetTransform}
-          className="relative w-full h-auto mx-auto block lg:mt-3 lg:mb-3 transition-transform duration-50"
+          className="relative w-full h-auto mx-auto block mt-2 lg:mt-5 transition-transform duration-50"
           style={{ transform: transformStyle }}
         >
           <img
@@ -75,9 +75,9 @@ function Hero({ toggled }: HeroProps) {
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 1, ease: "easeOut" }}
         >
-          <div className="text-3xl lg:text-8xl font-extrabold tracking-widest relative -mt-4 lg:-mt-16 pointer-events-none z-10">
+          <div className="text-4xl lg:text-8xl font-light tracking-widest relative -mt-6 lg:-mt-14 pointer-events-none z-10">
             <p>S T E V E</p>
             <p>F A J I L A N</p>
           </div>

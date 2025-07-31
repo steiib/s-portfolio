@@ -34,6 +34,7 @@ const Projects = ({ toggled }: ProjectProps) => {
             images={[fourtitude_1, fourtitude_2]}
             toggled={toggled}
             gradientColor="191,49,44"
+            tags={["HTML", "CSS", "JavaScript", "Python", "Flask"]}
           />
         </CardWrapper>
       </div>
@@ -50,6 +51,7 @@ const Projects = ({ toggled }: ProjectProps) => {
             images={[palengke_1, palengke_2]}
             toggled={toggled}
             gradientColor="29,103,112"
+            tags={["HTML", "CSS", "JavaScript", "Python", "Django", "SQLite"]}
           />
         </CardWrapper>
       </div>
