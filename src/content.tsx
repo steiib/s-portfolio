@@ -34,7 +34,7 @@ function Content() {
         id="about"
         className={`${
           textColor
-        } scroll-mt-30 lg:scroll-mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
+        } scroll-mt-25 lg:scroll-mt-30 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
         <About toggled={toggled} />
       </section>
@@ -44,7 +44,7 @@ function Content() {
         id="projects"
         className={`${
           textColor
-        } mt-20 lg:mt-40 scroll-mt-25 lg:scroll-mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
+        } scroll-mt-25 lg:scroll-mt-30 mt-20 lg:mt-40 w-11/12 max-w-sm mx-auto text-center lg:max-w-4xl`}
       >
         <Projects toggled={toggled} />
       </section>

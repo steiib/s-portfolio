@@ -20,7 +20,7 @@ function Navbar({ toggled }: NavbarProps) {
     <nav
       className={`${
         toggled ? "bg-white/30 text-black" : "bg-black/30 text-white"
-      } fixed top-6 left-1/2 transform -translate-x-1/2 z-50 backdrop-blur-md p-3 rounded-4xl w-[95%] max-w-6xl transition-all duration-300`}
+      } fixed top-2 left-1/2 transform -translate-x-1/2 z-50 backdrop-blur-md p-3 rounded-4xl w-[95%] max-w-6xl transition-all duration-300`}
     >
       <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
         {/* Logo */}

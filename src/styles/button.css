@@ -27,7 +27,7 @@ body.bg-toggled {
     border-color 0.2s ease;
   cursor: pointer;
   position: fixed;
-  bottom: 30px;
+  bottom: 15px;
   right: 30px;
 }
 

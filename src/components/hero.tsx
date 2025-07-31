@@ -1,8 +1,8 @@
 import { useState } from "react";
-import topo_b from "../images/topo_b.png";
-import topo_w from "../images/topo_w.png";
-// import pattern_b from "../images/pattern_b.png";
-// import pattern_w from "../images/pattern_w.png";
+// import topo_b from "../images/topo_b.png";
+// import topo_w from "../images/topo_w.png";
+import wave_1 from "../images/wave_1.png";
+import wave_2 from "../images/wave_2.png";
 
 interface HeroProps {
   toggled: boolean;
@@ -35,29 +35,33 @@ function Hero({ toggled }: HeroProps) {
       id="home"
       className={`${
         toggled ? "text-black" : "text-white"
-      } min-h-screen flex flex-col justify-center items-center max-w-sm lg:max-w-3xl mx-auto text-center`}
+      } min-h-screen flex flex-col justify-center items-center max-w-sm lg:max-w-5xl mx-auto text-center`}
     >
-      <div className="hover:scale-115 hover:tracking-widest transition-all duration-300 cursor-default">
+      <div className="hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
         <p className="text-2xl lg:text-5xl font-bold mt-8 lg:mt-16">Hi, I'm</p>
         <div
           onMouseMove={handleMouseMove}
           onMouseLeave={resetTransform}
-          className="w-full h-auto mx-auto block lg:mt-3 lg:mb-3 transition-transform duration-50"
+          className="relative w-full h-auto mx-auto block lg:mt-3 lg:mb-3 transition-transform duration-50"
           style={{ transform: transformStyle }}
         >
           <img
-            src={toggled ? topo_b : topo_w}
+            src={toggled ? wave_2 : wave_1}
             alt="NameBG"
-            className="w-full h-auto mx-auto pointer-events-none rounded-xs"
+            className="w-full h-auto mx-auto pointer-events-none rounded-lg"
           />
 
           {/* Shadow Overlay */}
           <div
-            className={`${toggled ? "from-white/70 to-transparent" : "from-black/70 to-transparent"} absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t rounded-b-xs pointer-events-none`}
+            className={`${
+              toggled
+                ? "from-white/30 to-transparent"
+                : "from-black/30 to-transparent"
+            } absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t pointer-events-none z-10`}
           />
         </div>
         {/* Name Placeholder */}
-        <div className="text-3xl lg:text-7xl font-extrabold tracking-widest relative -mt-6 lg:-mt-15 pointer-events-none">
+        <div className="text-3xl lg:text-7xl font-extrabold tracking-widest relative -mt-4 lg:-mt-13 pointer-events-none z-10">
           <p>S T E V E</p>
           <p>F A J I L A N</p>
         </div>

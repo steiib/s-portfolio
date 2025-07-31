@@ -41,10 +41,10 @@ const About = ({ toggled }: AboutProps) => {
           </div>
           <div className="text-md lg:text-2xl font-light mt-5 lg:mt-10">
             <p>
-              I am a 4th-year Computer Engineering student at FEU Institute of
-              Technology. I enjoy working on the creative side of software
-              development, especially front-end projects where I can focus on
-              design and user experience.
+              I am Steve Andrei Fajilan, a 4th-year Computer Engineering student
+              at FEU Institute of Technology. I enjoy working on the creative
+              side of software development, especially front-end projects where
+              I can focus on design and user experience.
             </p>
           </div>
         </>
@@ -54,124 +54,118 @@ const About = ({ toggled }: AboutProps) => {
       <div className="lg:text-4xl mt-11 lg:mt-21 font-bold">
         <p>Languages</p>
       </div>
-      <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(255,255,255),_transparent_75%)] bg-no-repeat">
-        <Container toggled={toggled} height="h-20 lg:h-35">
-          {Motion(
-            <div className="flex justify-center items-center gap-5 lg:gap-10">
-              {devIcon(
-                "https://devicon-website.vercel.app/api/html5/plain.svg",
-                "HTML5"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/css3/plain.svg",
-                "CSS3"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/cplusplus/plain.svg",
-                "C++"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/java/plain.svg",
-                "Java"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/python/plain.svg",
-                "Python"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/typescript/plain.svg",
-                "TypeScript"
-              )}
-            </div>
-          )}
-        </Container>
-      </div>
+      <Container toggled={toggled} height="h-20 lg:h-35">
+        {Motion(
+          <div className="flex justify-center items-center gap-5 lg:gap-10">
+            {devIcon(
+              "https://devicon-website.vercel.app/api/html5/plain.svg",
+              "HTML5"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/css3/plain.svg",
+              "CSS3"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/cplusplus/plain.svg",
+              "C++"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/java/plain.svg",
+              "Java"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/python/plain.svg",
+              "Python"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/typescript/plain.svg",
+              "TypeScript"
+            )}
+          </div>
+        )}
+      </Container>
 
       {/* Frameworks */}
       <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
         <p>Frameworks / Libraries</p>
       </div>
-      <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(255,255,255),_transparent_75%)] bg-no-repeat">
-        <Container toggled={toggled} height="h-20 lg:h-35">
-          {Motion(
-            <div className="flex justify-center items-center gap-5 lg:gap-10">
-              {devIcon(
-                "https://devicon-website.vercel.app/api/react/original.svg",
-                "ReactJS"
-              )}
+      <Container toggled={toggled} height="h-20 lg:h-35">
+        {Motion(
+          <div className="flex justify-center items-center gap-5 lg:gap-10">
+            {devIcon(
+              "https://devicon-website.vercel.app/api/react/original.svg",
+              "React.js"
+            )}
 
-              {devIcon(
-                "https://devicon-website.vercel.app/api/nodejs/plain.svg",
-                "NodeJS"
-              )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/nodejs/plain.svg",
+              "Node.js"
+            )}
 
-              {devIcon(
-                "https://devicon-website.vercel.app/api/tailwindcss/plain.svg",
-                "Tailwind"
-              )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/tailwindcss/plain.svg",
+              "Tailwind"
+            )}
 
-              {/* Framer Motion Icon */}
-              <div className="relative flex flex-col items-center group">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg"
-                  style={{
-                    filter: toggled ? "none" : "brightness(0) invert(1)",
-                  }}
-                  alt="Framer Motion"
-                  className="w-9 lg:w-18 transition-all duration-200 group-hover:-translate-y-3"
-                />
-                <div className="absolute top-full text-xs lg:text-[16px] font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
-                  Motion
-                </div>
+            {/* Framer Motion Icon */}
+            <div className="relative flex flex-col items-center group">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg"
+                style={{
+                  filter: toggled ? "none" : "brightness(0) invert(1)",
+                }}
+                alt="Framer Motion"
+                className="w-9 lg:w-18 transition-all duration-200 group-hover:-translate-y-3"
+              />
+              <div className="absolute top-full text-xs lg:text-[16px] font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+                Motion
               </div>
             </div>
-          )}
-        </Container>
-      </div>
+          </div>
+        )}
+      </Container>
 
       {/* Tools */}
       <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
         <p>Tools</p>
       </div>
-      <div className="bg-[radial-gradient(circle_at_50%_400%,_rgba(255,255,255),_transparent_75%)] bg-no-repeat">
-        <Container toggled={toggled} height="h-20 lg:h-35">
-          {Motion(
-            <div className="flex justify-center items-center gap-5 lg:gap-10">
-              {devIcon(
-                "https://devicon-website.vercel.app/api/bash/plain.svg",
-                "Bash"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/git/plain.svg",
-                "Git"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/github/original.svg",
-                "GitHub"
-              )}
-              {devIcon(
-                "https://devicon-website.vercel.app/api/figma/plain.svg",
-                "Figma"
-              )}
+      <Container toggled={toggled} height="h-20 lg:h-35">
+        {Motion(
+          <div className="flex justify-center items-center gap-5 lg:gap-10">
+            {devIcon(
+              "https://devicon-website.vercel.app/api/bash/plain.svg",
+              "Bash"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/git/plain.svg",
+              "Git"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/github/original.svg",
+              "GitHub"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/figma/plain.svg",
+              "Figma"
+            )}
 
-              {/* Vite Icon */}
-              <div className="relative flex flex-col items-center group">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-plain.svg"
-                  style={{
-                    filter: toggled ? "none" : "brightness(0) invert(1)",
-                  }}
-                  alt="Vite"
-                  className="w-9 lg:w-18 transition-all duration-200 group-hover:-translate-y-3"
-                />
-                <div className="absolute top-full text-xs lg:text-[16px] font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
-                  Vite
-                </div>
+            {/* Vite Icon */}
+            <div className="relative flex flex-col items-center group">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-plain.svg"
+                style={{
+                  filter: toggled ? "none" : "brightness(0) invert(1)",
+                }}
+                alt="Vite"
+                className="w-9 lg:w-18 transition-all duration-200 group-hover:-translate-y-3"
+              />
+              <div className="absolute top-full text-xs lg:text-[16px] font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
+                Vite
               </div>
             </div>
-          )}
-        </Container>
-      </div>
+          </div>
+        )}
+      </Container>
     </>
   );
 };
