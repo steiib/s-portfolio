@@ -14,18 +14,18 @@ const Projects = ({ toggled }: ProjectProps) => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-16">
+        <div className="text-3xl lg:text-5xl font-bold mb-6 lg:mb-12">
           <p>Projects</p>
         </div>
       </motion.div>
 
       {/* Project 1 */}
-      <div className="relative mb-45 lg:mb-85">
+      <div className="relative mb-40 lg:mb-70">
         <CardWrapper>
           <ProjectCard
             title="Fourtitude Garage"
@@ -41,7 +41,7 @@ const Projects = ({ toggled }: ProjectProps) => {
       {/* Project 2 */}
       <div className="relative mb-100 lg:mb-160">
         {" "}
-        // to be changed later
+        {/* to be changed later */}
         <CardWrapper>
           <ProjectCard
             title="PALengke"

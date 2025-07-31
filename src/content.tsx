@@ -21,7 +21,6 @@ function Content() {
       <Navbar toggled={toggled} />
 
       {/* Hero Section */}
-
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -50,7 +49,7 @@ function Content() {
         <Projects toggled={toggled} />
       </section>
 
-      {/* Dark / Light Mode Toggle Button */}
+      {/* Dark/Light Mode Toggle Button */}
       <Button toggled={toggled} setToggled={setToggled} />
     </>
   );

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import topo_b from "../images/topo_b.png";
 import topo_w from "../images/topo_w.png";
+// import pattern_b from "../images/pattern_b.png";
+// import pattern_w from "../images/pattern_w.png";
 
 interface HeroProps {
   toggled: boolean;
@@ -35,7 +37,7 @@ function Hero({ toggled }: HeroProps) {
         toggled ? "text-black" : "text-white"
       } min-h-screen flex flex-col justify-center items-center max-w-sm lg:max-w-3xl mx-auto text-center`}
     >
-      <div className="hover:scale-110 hover:tracking-widest transition-all duration-300 cursor-default">
+      <div className="hover:scale-115 hover:tracking-widest transition-all duration-300 cursor-default">
         <p className="text-2xl lg:text-5xl font-bold mt-8 lg:mt-16">Hi, I'm</p>
         <div
           onMouseMove={handleMouseMove}
@@ -46,12 +48,16 @@ function Hero({ toggled }: HeroProps) {
           <img
             src={toggled ? topo_b : topo_w}
             alt="NameBG"
-            className="w-full h-auto mx-auto pointer-events-none rounded-sm"
+            className="w-full h-auto mx-auto pointer-events-none rounded-xs"
+          />
+
+          {/* Shadow Overlay */}
+          <div
+            className={`${toggled ? "from-white/70 to-transparent" : "from-black/70 to-transparent"} absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t rounded-b-xs pointer-events-none`}
           />
         </div>
-
         {/* Name Placeholder */}
-        <div className="text-3xl lg:text-7xl font-extrabold tracking-widest">
+        <div className="text-3xl lg:text-7xl font-extrabold tracking-widest relative -mt-6 lg:-mt-15 pointer-events-none">
           <p>S T E V E</p>
           <p>F A J I L A N</p>
         </div>
