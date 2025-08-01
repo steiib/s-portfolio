@@ -42,7 +42,7 @@ const About = ({ toggled }: AboutProps) => {
     <>
       {Motion(
         <>
-          <div className="text-3xl lg:text-5xl font-bold">
+          <div className="text-3xl lg:text-5xl font-bold mt-10 lg:mt-25">
             <p>About Me</p>
           </div>
           <div className="text-md lg:text-2xl font-light mt-5 lg:mt-10">
@@ -57,7 +57,7 @@ const About = ({ toggled }: AboutProps) => {
       )}
 
       {/* Languages */}
-      <div className="lg:text-4xl mt-11 lg:mt-21 font-bold">
+      <div className="lg:text-4xl mt-8 lg:mt-21 font-bold">
         <p>Languages</p>
       </div>
       <Container {...ContainerProps}>
@@ -92,7 +92,7 @@ const About = ({ toggled }: AboutProps) => {
       </Container>
 
       {/* Frameworks */}
-      <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
+      <div className="lg:text-4xl mt-6 lg:mt-15 font-bold">
         <p>Frameworks / Libraries</p>
       </div>
       <Container {...ContainerProps}>
@@ -132,7 +132,7 @@ const About = ({ toggled }: AboutProps) => {
       </Container>
 
       {/* Tools */}
-      <div className="lg:text-4xl mt-8 lg:mt-15 font-bold">
+      <div className="lg:text-4xl mt-6 lg:mt-15 font-bold">
         <p>Tools</p>
       </div>
       <Container {...ContainerProps}>

@@ -32,58 +32,79 @@ function Hero({ toggled }: HeroProps) {
   };
 
   return (
-    <section
-      id="home"
-      className={`${
-        toggled ? "text-[#182529]" : "text-[#ffffff]"
-      } min-h-screen flex flex-col justify-center items-center max-w-lg lg:max-w-5xl mx-auto text-center`}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
-      <div className="hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
-        {/* Top Text */}
-        <motion.div
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <p className="text-lg lg:text-5xl font-medium mt-5 lg:mt-10">
-            Hi, I'm
-          </p>
-        </motion.div>
+      <section
+        id="home"
+        className={`${
+          toggled ? "text-black" : "text-white"
+        } min-h-screen flex flex-col justify-center items-center max-w-lg lg:max-w-4xl mx-auto text-center`}
+      >
+        <div className="hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
+          {/* Top Text */}
+          {/* <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <p className="text-lg lg:text-3xl font-medium"></p>
+          </motion.div> */}
 
+          {/* Background Image */}
+          <div
+            onMouseMove={handleMouseMove}
+            onMouseLeave={resetTransform}
+            className="relative w-full h-auto mx-auto block mt-2 lg:mt-5 transition-transform duration-50"
+            style={{ transform: transformStyle }}
+          >
+            <img
+              src={toggled ? wave_2 : wave_1}
+              alt="NameBG"
+              className="w-full h-auto mx-auto pointer-events-none rounded-lg"
+            />
+
+            {/* Shadow Overlay */}
+            <div
+              className={`${
+                toggled
+                  ? "from-white/30 to-transparent"
+                  : "from-black/30 to-transparent"
+              } absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t pointer-events-none`}
+            />
+          </div>
+
+          {/* Name Placeholder */}
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <div className="text-4xl lg:text-8xl font-light tracking-widest relative -mt-6 lg:-mt-14 pointer-events-none z-10">
+              <p>S T E V E</p>
+              <p>F A J I L A N</p>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Call to Action Button */}
         <div
-          onMouseMove={handleMouseMove}
-          onMouseLeave={resetTransform}
-          className="relative w-full h-auto mx-auto block mt-2 lg:mt-5 transition-transform duration-50"
-          style={{ transform: transformStyle }}
+          className="relative top-20 lg:top-25 w-7 lg:w-8 hover:scale-125 transition-all duration-300 cursor-pointer"
+          onClick={() => {
+            document
+              .getElementById("about")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           <img
-            src={toggled ? wave_2 : wave_1}
-            alt="NameBG"
-            className="w-full h-auto mx-auto pointer-events-none rounded-lg"
-          />
-
-          {/* Shadow Overlay */}
-          <div
-            className={`${
-              toggled
-                ? "from-white/30 to-transparent"
-                : "from-black/30 to-transparent"
-            } absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t pointer-events-none`}
+            src={`https://icongr.am/feather/arrow-down-circle.svg?size=128&color=${toggled ? "000000" : "ffffff"}`}
+            alt="Arrow Down"
           />
         </div>
-        {/* Name Placeholder */}
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <div className="text-4xl lg:text-8xl font-light tracking-widest relative -mt-6 lg:-mt-14 pointer-events-none z-10">
-            <p>S T E V E</p>
-            <p>F A J I L A N</p>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+      </section>
+    </motion.div>
   );
 }
 
