@@ -8,6 +8,7 @@ interface ContainerProps {
   toggled: boolean;
   gradientColor: string;
   tags: string[];
+  link: string;
 }
 
 function Projects({
@@ -18,6 +19,7 @@ function Projects({
   toggled,
   gradientColor,
   tags,
+  link,
 }: ContainerProps) {
   const background = `radial-gradient(circle at center 250%, rgba(${gradientColor}), transparent 80%)`;
 
@@ -64,10 +66,27 @@ function Projects({
             key={index}
             src={src}
             alt={`${title} Preview ${index + 1}`}
-            className="w-80 lg:w-170 rounded-xs brightness-85 grayscale-25 hover:grayscale-0 hover:brightness-100 hover:scale-103 duration-200 transition-all"
+            className="w-80 lg:w-170 rounded-xs brightness-85 grayscale-15 hover:grayscale-0 hover:brightness-100 hover:scale-103 duration-200 transition-all"
           />
         ))}
       </div>
+
+      {/* View Project Button */}
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <div
+          className={`absolute -top-4 -right-2 w-14 h-7 lg:-top-5 lg:-right-5 lg:w-12 lg:h-12 hover:scale-125 flex items-center justify-center rounded-full transition-all duration-300 cursor-pointer z-10 ${
+            toggled ? "bg-black" : "bg-white"
+          }`}
+        >
+          <img
+            src={`https://icongr.am/feather/external-link.svg?size=128&color=${
+              toggled ? "ffffff" : "000000"
+            }`}
+            alt="Open Project"
+            className="w-4 lg:w-6"
+          />
+        </div>
+      </a>
     </div>
   );
 }

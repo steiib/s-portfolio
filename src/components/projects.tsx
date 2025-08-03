@@ -25,36 +25,52 @@ const Projects = ({ toggled }: ProjectProps) => {
       </motion.div>
 
       {/* Project 1 */}
-      <div className="relative mb-40 lg:mb-70">
-        <CardWrapper>
-          <ProjectCard
-            title="Fourtitude Garage"
-            subtitle="Automobile Shop Point-of-Sale (POS) System"
-            description="A point-of-sale system for managing car purchases, rentals, and services. Developed as a final project for our Data Structures and Algorithms / Database course."
-            images={[fourtitude_1, fourtitude_2]}
-            toggled={toggled}
-            gradientColor="191,49,44"
-            tags={["HTML", "CSS", "JavaScript", "Python", "Flask"]}
-          />
-        </CardWrapper>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="relative mb-40 lg:mb-80">
+          <CardWrapper>
+            <ProjectCard
+              title="Fourtitude Garage"
+              subtitle="Automobile Shop Point-of-Sale (POS) System"
+              description="A point-of-sale system for managing car purchases, rentals, and services. Developed as a final project for our Data Structures and Algorithms / Database course."
+              images={[fourtitude_1, fourtitude_2]}
+              toggled={toggled}
+              gradientColor="191,49,44"
+              tags={["HTML", "CSS", "JavaScript", "Python", "Flask"]}
+              link="https://github.com/steiib/Fourtitude-Garage"
+            />
+          </CardWrapper>
+        </div>
+      </motion.div>
 
       {/* Project 2 */}
-      <div className="relative mb-100 lg:mb-160">
-        {" "}
-        {/* to be changed later */}
-        <CardWrapper>
-          <ProjectCard
-            title="PALengke"
-            subtitle="Wet & Dry Market Waypoint Navigation System"
-            description="A wayfinding system that helps public market customers locate products, compare prices, and navigate to stores. Developed as a final project for our Software Design course."
-            images={[palengke_1, palengke_2]}
-            toggled={toggled}
-            gradientColor="29,103,112"
-            tags={["HTML", "CSS", "JavaScript", "Python", "Django", "SQLite"]}
-          />
-        </CardWrapper>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="relative mb-100 lg:mb-160">
+          {" "}
+          {/* to be changed later */}
+          <CardWrapper>
+            <ProjectCard
+              title="PALengke"
+              subtitle="Wet & Dry Market Waypoint Navigation System"
+              description="A wayfinding system that helps public market customers locate products, compare prices, and navigate to stores. Developed as a final project for our Software Design course."
+              images={[palengke_1, palengke_2]}
+              toggled={toggled}
+              gradientColor="29,103,112"
+              tags={["HTML", "CSS", "JavaScript", "Python", "Django", "SQLite"]}
+              link="https://github.com/steiib/PALengke"
+            />
+          </CardWrapper>
+        </div>
+      </motion.div>
     </>
   );
 };

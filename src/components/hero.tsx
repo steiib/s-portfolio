@@ -32,26 +32,25 @@ function Hero({ toggled }: HeroProps) {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
-      <section
+    <div className="relative min-h-screen flex flex-col items-center justify-center">
+      <motion.section
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
         id="home"
         className={`${
           toggled ? "text-black" : "text-white"
-        } min-h-screen flex flex-col justify-center items-center max-w-lg lg:max-w-4xl mx-auto text-center`}
+        } relative min-h-screen flex flex-col justify-center items-center max-w-lg lg:max-w-4xl mx-auto text-center`}
       >
         <div className="hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
           {/* Top Text */}
-          {/* <motion.div
+          <motion.div
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <p className="text-lg lg:text-3xl font-medium"></p>
-          </motion.div> */}
+            <p className="text-lg lg:text-3xl font-medium">Hi, I'm</p>
+          </motion.div>
 
           {/* Background Image */}
           <div
@@ -63,7 +62,7 @@ function Hero({ toggled }: HeroProps) {
             <img
               src={toggled ? wave_2 : wave_1}
               alt="NameBG"
-              className="w-full h-auto mx-auto pointer-events-none rounded-lg"
+              className="w-full h-auto mx-auto pointer-events-none rounded-sm"
             />
 
             {/* Shadow Overlay */}
@@ -88,23 +87,25 @@ function Hero({ toggled }: HeroProps) {
             </div>
           </motion.div>
         </div>
+      </motion.section>
 
-        {/* Call to Action Button */}
-        <div
-          className="relative top-20 lg:top-25 w-7 lg:w-8 hover:scale-125 transition-all duration-300 cursor-pointer"
-          onClick={() => {
-            document
-              .getElementById("about")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-          <img
-            src={`https://icongr.am/feather/arrow-down-circle.svg?size=128&color=${toggled ? "000000" : "ffffff"}`}
-            alt="Arrow Down"
-          />
-        </div>
-      </section>
-    </motion.div>
+      {/* Call to Action Button */}
+      <div
+        className="relative bottom-60 mt-16 w-10 lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
+        onClick={() => {
+          document
+            .getElementById("about")
+            ?.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        <img
+          src={`https://icongr.am/feather/arrow-down-circle.svg?size=128&color=${
+            toggled ? "000000" : "ffffff"
+          }`}
+          alt="Arrow Down"
+        />
+      </div>
+    </div>
   );
 }
 
