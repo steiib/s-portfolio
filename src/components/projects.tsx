@@ -5,6 +5,8 @@ import fourtitude_1 from "../images/fourtitude_1.png";
 import fourtitude_2 from "../images/fourtitude_2.png";
 import palengke_1 from "../images/palengke1.png";
 import palengke_2 from "../images/palengke2.png";
+import gastrobot_1 from "../images/gastrobot2.png";
+import gastrobot_2 from "../images/gastrobot1.png";
 
 interface ProjectProps {
   toggled: boolean;
@@ -54,9 +56,8 @@ const Projects = ({ toggled }: ProjectProps) => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="relative mb-100 lg:mb-160">
+        <div className="relative mb-40 lg:mb-80">
           {" "}
-          {/* to be changed later */}
           <CardWrapper>
             <ProjectCard
               title="PALengke"
@@ -67,6 +68,37 @@ const Projects = ({ toggled }: ProjectProps) => {
               gradientColor="29,103,112"
               tags={["HTML", "CSS", "JavaScript", "Python", "Django", "SQLite"]}
               link="https://github.com/steiib/PALengke"
+            />
+          </CardWrapper>
+        </div>
+      </motion.div>
+
+      {/* Project 3 */}
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="relative mb-100 lg:mb-160">
+          {" "}
+          {/* to be changed later */}
+          <CardWrapper>
+            <ProjectCard
+              title="GastroBot"
+              subtitle="IoT-Based Domestic Insecticide Applicator Bot"
+              description="A remote-controlled bot that sprays insecticide, vacuums dust, detects obstacles, and provides real-time system status. It features 180° sprayer and camera movement and detects gas presence."
+              images={[gastrobot_1, gastrobot_2]}
+              toggled={toggled}
+              gradientColor="158,149,63"
+              tags={[
+                "JavaScript",
+                "React Native",
+                "NodeMCU",
+                "Arduino IOT Cloud",
+                "ngrok",
+              ]}
+              link="https://drive.google.com/file/d/1y75Yk4svCZcN6DN_usEgw_-RNUSVzdVP/view?usp=sharing"
             />
           </CardWrapper>
         </div>

@@ -100,12 +100,12 @@ const About = ({ toggled }: AboutProps) => {
           <div className="flex justify-center items-center gap-5 lg:gap-10">
             {devIcon(
               "https://devicon-website.vercel.app/api/react/original.svg",
-              "React.js"
+              "React.JS"
             )}
 
             {devIcon(
               "https://devicon-website.vercel.app/api/nodejs/plain.svg",
-              "Node.js"
+              "Node.JS"
             )}
 
             {devIcon(

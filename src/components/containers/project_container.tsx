@@ -39,8 +39,10 @@ function Projects({
           </div>
 
           {/* Description */}
-          <div className="absolute top-3 right-1 lg:top-5 lg:right-5 text-left w-45 lg:w-125">
-            <p className="text-xs lg:text-lg font-light">{description}</p>
+          <div className="absolute top-3 right-1 lg:top-5 lg:right-7 text-left w-45 lg:w-125">
+            <p className="text-[10px] lg:text-[17px] font-light">
+              {description}
+            </p>
           </div>
         </div>
         {/* Tags */}
@@ -59,6 +61,7 @@ function Projects({
           ))}
         </div>
       </Container>
+
       {/* Project Images */}
       <div className="absolute top-44 lg:top-50 left-5 lg:left-8 flex gap-3 lg:gap-6">
         {images.map((src, index) => (
