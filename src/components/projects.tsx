@@ -33,7 +33,7 @@ const Projects = ({ toggled }: ProjectProps) => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="relative mb-40 lg:mb-80">
+        <div className="relative mb-40 lg:mb-75">
           <CardWrapper>
             <ProjectCard
               title="Fourtitude Garage"
@@ -56,7 +56,7 @@ const Projects = ({ toggled }: ProjectProps) => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="relative mb-40 lg:mb-80">
+        <div className="relative mb-40 lg:mb-75">
           {" "}
           <CardWrapper>
             <ProjectCard
@@ -87,18 +87,18 @@ const Projects = ({ toggled }: ProjectProps) => {
             <ProjectCard
               title="GastroBot"
               subtitle="IoT-Based Domestic Insecticide Applicator Bot"
-              description="A remote-controlled bot that sprays insecticide, vacuums dust, detects obstacles, and provides real-time system status. It features 180° sprayer and camera movement and detects gas presence."
+              description="A remote-controlled bot that sprays insecticide, vacuums dust, detects obstacles, and provides real-time system status. It features 180° sprayer and camera movement and detects gas presence in the area."
               images={[gastrobot_1, gastrobot_2]}
               toggled={toggled}
               gradientColor="158,149,63"
               tags={[
-                "JavaScript",
                 "React Native",
+                "JavaScript",
                 "NodeMCU",
                 "Arduino IOT Cloud",
                 "ngrok",
               ]}
-              link="https://drive.google.com/file/d/1y75Yk4svCZcN6DN_usEgw_-RNUSVzdVP/view?usp=sharing"
+              link="https://drive.google.com/file/d/1U8s2t8wRJDZFmg3Aak7xoYHnBSC3N1ae/view?usp=sharing"
             />
           </CardWrapper>
         </div>

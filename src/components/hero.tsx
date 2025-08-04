@@ -40,9 +40,9 @@ function Hero({ toggled }: HeroProps) {
         id="home"
         className={`${
           toggled ? "text-black" : "text-white"
-        } relative min-h-screen flex flex-col justify-center items-center max-w-lg lg:max-w-4xl mx-auto text-center`}
+        } relative min-h-screen flex flex-col justify-center items-center max-w-md lg:max-w-4xl mx-auto text-center`}
       >
-        <div className="hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
+        <div className="-mt-35 lg:mt-0 hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
           {/* Top Text */}
           <motion.div
             initial={{ y: -50, opacity: 0 }}
@@ -62,7 +62,7 @@ function Hero({ toggled }: HeroProps) {
             <img
               src={toggled ? wave_2 : wave_1}
               alt="NameBG"
-              className="w-full h-auto mx-auto pointer-events-none rounded-sm"
+              className="w-full h-auto mx-auto pointer-events-none rounded-xs"
             />
 
             {/* Shadow Overlay */}
@@ -91,7 +91,7 @@ function Hero({ toggled }: HeroProps) {
 
       {/* Call to Action Button */}
       <div
-        className="relative bottom-60 mt-16 w-10 lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
+        className="relative bottom-54 mt-16 w-8 lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
         onClick={() => {
           document
             .getElementById("about")
