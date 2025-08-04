@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 // import logo_b from "./images/logo_b.png";
 import logo2_b from "../images/logo2_b.png";
 import logo2_w from "../images/logo2_w.png";
+import Resume from "../assets/Steve-Andrei-Fajilan-Resume.pdf";
 
 interface NavbarProps {
   toggled: boolean;
@@ -50,8 +51,10 @@ function Navbar({ toggled }: NavbarProps) {
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             ))}
+
+            {/* Download Resume Button */}
             <a
-              href="/resume.pdf"
+              href={Resume}
               download
               className={`${
                 toggled
@@ -104,8 +107,10 @@ function Navbar({ toggled }: NavbarProps) {
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             ))}
+
+            {/* Download Resume Button */}
             <a
-              href="/resume.pdf"
+              href={Resume}
               download
               className={`${
                 toggled

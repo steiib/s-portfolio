@@ -96,7 +96,7 @@ const Projects = ({ toggled }: ProjectProps) => {
                 "JavaScript",
                 "NodeMCU",
                 "Arduino IOT Cloud",
-                "ngrok",
+                "ESP32 Dev Board",
               ]}
               link="https://drive.google.com/file/d/1U8s2t8wRJDZFmg3Aak7xoYHnBSC3N1ae/view?usp=sharing"
             />
