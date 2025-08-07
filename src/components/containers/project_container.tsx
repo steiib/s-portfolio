@@ -78,7 +78,7 @@ function Projects({
       {/* View Project Button */}
       <a href={link} target="_blank" rel="noopener noreferrer">
         <div
-          className={`absolute -top-4 -right-2 w-14 h-7 lg:-top-5 lg:-right-5 lg:w-12 lg:h-12 hover:scale-125 flex items-center justify-center rounded-full transition-all duration-300 cursor-pointer z-10 ${
+          className={`absolute -top-4 -right-2 w-14 h-7 lg:-top-6 lg:-right-6 lg:w-14 lg:h-14 hover:scale-125 flex items-center justify-center rounded-full transition-all duration-300 cursor-pointer z-10 ${
             toggled ? "bg-black" : "bg-white"
           }`}
         >
@@ -87,7 +87,7 @@ function Projects({
               toggled ? "ffffff" : "000000"
             }`}
             alt="Open Project"
-            className="w-4 lg:w-6"
+            className="w-4 lg:w-7"
           />
         </div>
       </a>

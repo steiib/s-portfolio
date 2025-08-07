@@ -55,14 +55,15 @@ function Navbar({ toggled }: NavbarProps) {
             {/* Download Resume Button */}
             <a
               href={Resume}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${
                 toggled
                   ? "border-black hover:bg-black hover:text-white"
                   : "border-white hover:bg-white hover:text-black"
-              } border-2 px-4 py-2 rounded-xl text-md font-semibold bg-transparent transition-colors duration-200`}
+              } border-2 px-6 py-2 rounded-xl text-md font-semibold bg-transparent transition-colors duration-200`}
             >
-              Download Resume
+              View Resume
             </a>
           </div>
 
@@ -111,14 +112,15 @@ function Navbar({ toggled }: NavbarProps) {
             {/* Download Resume Button */}
             <a
               href={Resume}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${
                 toggled
                   ? "border-black hover:bg-black hover:text-white"
                   : "border-white hover:bg-white hover:text-black"
-              } border-2 px-3 py-1.5 rounded-xl text-lg font-semibold transition-colors duration-200`}
+              } border-2 px-5 py-1.5 rounded-xl text-lg font-semibold transition-colors duration-200`}
             >
-              Download Resume
+              View Resume
             </a>
           </div>
         )}

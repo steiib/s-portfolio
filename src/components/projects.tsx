@@ -15,6 +15,7 @@ interface ProjectProps {
 const Projects = ({ toggled }: ProjectProps) => {
   return (
     <>
+      {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,15 +23,15 @@ const Projects = ({ toggled }: ProjectProps) => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="text-3xl lg:text-5xl font-bold mb-6 lg:mb-12">
-          <p>Projects</p>
+          <p>Featured Projects</p>
         </div>
       </motion.div>
 
       {/* Project 1 */}
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        initial={{ x: 100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="relative mb-40 lg:mb-75">
@@ -51,9 +52,9 @@ const Projects = ({ toggled }: ProjectProps) => {
 
       {/* Project 2 */}
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        initial={{ x: 100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="relative mb-40 lg:mb-75">
@@ -75,14 +76,13 @@ const Projects = ({ toggled }: ProjectProps) => {
 
       {/* Project 3 */}
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        initial={{ x: 100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="relative mb-100 lg:mb-160">
+        <div className="relative mb-50 lg:mb-105">
           {" "}
-          {/* to be changed later */}
           <CardWrapper>
             <ProjectCard
               title="GastroBot"
@@ -96,9 +96,8 @@ const Projects = ({ toggled }: ProjectProps) => {
                 "JavaScript",
                 "NodeMCU",
                 "Arduino IOT Cloud",
-                "ESP32 Dev Board",
               ]}
-              link="https://drive.google.com/file/d/1U8s2t8wRJDZFmg3Aak7xoYHnBSC3N1ae/view?usp=sharing"
+              link="https://drive.google.com/drive/folders/1EB3Ue_tCs3PlpLI2dJo68rhIV2ioyCZ-?usp=sharing"
             />
           </CardWrapper>
         </div>
