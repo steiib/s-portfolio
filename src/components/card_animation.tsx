@@ -15,7 +15,7 @@ export default function AnimatedCardWrapper({
     <motion.div
       ref={ref}
       initial={{ scale: 0.9 }}
-      animate={inView ? { scale: 1 } : { scale: 0.85 }}
+      animate={inView ? { scale: 1 } : { scale: 0.9 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       {children}
