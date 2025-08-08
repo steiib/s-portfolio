@@ -70,7 +70,7 @@ function Projects({
             key={index}
             src={src}
             alt={`${title} Preview ${index + 1}`}
-            className="w-80 lg:w-170 rounded-xs brightness-85 grayscale-10 hover:grayscale-0 hover:brightness-100 hover:scale-103 duration-200 transition-all"
+            className="w-80 lg:w-170 rounded-xs brightness-90 hover:brightness-100 hover:scale-103 duration-200 transition-all"
           />
         ))}
       </div>

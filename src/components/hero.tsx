@@ -42,7 +42,7 @@ function Hero({ toggled }: HeroProps) {
           toggled ? "text-black" : "text-white"
         } relative min-h-screen flex flex-col justify-center items-center max-w-md lg:max-w-4xl mx-auto text-center`}
       >
-        <div className="-mt-35 lg:mt-0 hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
+        <div className="-mt-15 lg:mt-0 hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
           {/* Top Text */}
           <motion.div
             initial={{ y: -50, opacity: 0 }}
@@ -56,7 +56,7 @@ function Hero({ toggled }: HeroProps) {
           <div
             onMouseMove={handleMouseMove}
             onMouseLeave={resetTransform}
-            className="relative w-full h-auto mx-auto block mt-2 lg:mt-5 transition-transform duration-50"
+            className="relative w-full h-auto mx-auto block mt-1 lg:mt-5 transition-transform duration-50"
             style={{ transform: transformStyle }}
           >
             <img
@@ -91,7 +91,7 @@ function Hero({ toggled }: HeroProps) {
 
       {/* Call to Action Button */}
       <div
-        className="relative bottom-54 mt-16 w-8 lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
+        className="relative bottom-40 mt-16 w-8 lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
         onClick={() => {
           document
             .getElementById("about")

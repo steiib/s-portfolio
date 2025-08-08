@@ -47,17 +47,21 @@ const About = ({ toggled }: AboutProps) => {
           </div>
           <div className="text-md lg:text-2xl font-light mt-5 lg:mt-10">
             <p>
-              I am Steve Andrei Fajilan, a 4th-year Computer Engineering student
-              at FEU Institute of Technology. I enjoy working on the creative
-              side of software development, especially front-end projects where
-              I can focus on design and user experience.
+              I am Steve Andrei Fajilan, a Computer Engineering student with
+              hands-on experience in software and hardware development. I enjoy
+              working on the creative side of software development, especially
+              front-end projects where I can focus on design and user
+              experience. In my free time, I also create 3D models in Blender,
+              which I incorporate into design and prototyping projects,
+              delivering creative and practical solutions to technical
+              challenges.
             </p>
           </div>
         </>
       )}
 
       {/* Languages */}
-      <div className="lg:text-4xl mt-8 lg:mt-21 font-bold">
+      <div className="text-xl lg:text-4xl mt-10 lg:mt-20 font-bold">
         <p>Languages</p>
       </div>
       <Container {...ContainerProps}>
@@ -92,7 +96,7 @@ const About = ({ toggled }: AboutProps) => {
       </Container>
 
       {/* Frameworks */}
-      <div className="lg:text-4xl mt-6 lg:mt-15 font-bold">
+      <div className="text-xl lg:text-4xl mt-6 lg:mt-15 font-bold">
         <p>Frameworks / Libraries</p>
       </div>
       <Container {...ContainerProps}>
@@ -132,7 +136,7 @@ const About = ({ toggled }: AboutProps) => {
       </Container>
 
       {/* Tools */}
-      <div className="lg:text-4xl mt-6 lg:mt-15 font-bold">
+      <div className="text-xl lg:text-4xl mt-6 lg:mt-15 font-bold">
         <p>Tools</p>
       </div>
       <Container {...ContainerProps}>

@@ -109,7 +109,7 @@ const Footer = ({ toggled }: Footer) => {
             {" "}
             View Resume
           </a>{" "}
-          | Rizal, Philippines
+          | Antipolo, Philippines
         </div>
 
         {/* Copyright */}
