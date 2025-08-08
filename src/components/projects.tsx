@@ -19,7 +19,7 @@ const Projects = ({ toggled }: ProjectProps) => {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="text-3xl lg:text-5xl font-bold mb-6 lg:mb-12">
@@ -31,7 +31,7 @@ const Projects = ({ toggled }: ProjectProps) => {
       <motion.div
         initial={{ x: 100 }}
         whileInView={{ x: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="relative mb-40 lg:mb-75">
@@ -54,7 +54,7 @@ const Projects = ({ toggled }: ProjectProps) => {
       <motion.div
         initial={{ x: 100 }}
         whileInView={{ x: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="relative mb-40 lg:mb-75">
@@ -78,7 +78,7 @@ const Projects = ({ toggled }: ProjectProps) => {
       <motion.div
         initial={{ x: 100 }}
         whileInView={{ x: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
         <div className="relative mb-50 lg:mb-105">
