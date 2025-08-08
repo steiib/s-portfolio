@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-// import topo_b from "../images/topo_b.png";
-// import topo_w from "../images/topo_w.png";
 import wave_1 from "../images/wave_1.png";
 import wave_2 from "../images/wave_2.png";
+import mwave_1 from "../images/mwave_1.png";
+import mwave_2 from "../images/mwave_2.png";
 
 interface HeroProps {
   toggled: boolean;
@@ -49,7 +49,7 @@ function Hero({ toggled }: HeroProps) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <p className="text-lg lg:text-3xl font-medium">Hi, I'm</p>
+            <p className="text-2xl lg:text-3xl font-medium">Hi, I'm</p>
           </motion.div>
 
           {/* Background Image */}
@@ -59,19 +59,18 @@ function Hero({ toggled }: HeroProps) {
             className="relative w-full h-auto mx-auto block mt-1 lg:mt-5 transition-transform duration-50"
             style={{ transform: transformStyle }}
           >
+            {/* Desktop Image */}
             <img
               src={toggled ? wave_2 : wave_1}
               alt="NameBG"
-              className="w-full h-auto mx-auto pointer-events-none rounded-xs"
+              className="w-full h-auto mx-auto pointer-events-none rounded-xs hidden lg:block"
             />
 
-            {/* Shadow Overlay */}
-            <div
-              className={`${
-                toggled
-                  ? "from-white/30 to-transparent"
-                  : "from-black/30 to-transparent"
-              } absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t pointer-events-none`}
+            {/* Mobile Image */}
+            <img
+              src={toggled ? mwave_2 : mwave_1}
+              alt="NameBG"
+              className="w-10/12 h-auto mx-auto pointer-events-none rounded-xs block lg:hidden"
             />
           </div>
 
@@ -91,7 +90,7 @@ function Hero({ toggled }: HeroProps) {
 
       {/* Call to Action Button */}
       <div
-        className="relative bottom-40 mt-16 w-8 lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
+        className="absolute bottom-30 w-10 lg:relative lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
         onClick={() => {
           document
             .getElementById("about")

@@ -40,7 +40,7 @@ function Content() {
   const textColor = toggled ? "text-black" : "text-white";
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* NavBar */}
       {showNavbar && <Navbar toggled={toggled} />}
 
@@ -76,7 +76,7 @@ function Content() {
 
       {/* Dark/Light Mode Toggle Button */}
       <Button toggled={toggled} setToggled={setToggled} />
-    </>
+    </div>
   );
 }
 
