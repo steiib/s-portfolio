@@ -15,7 +15,7 @@ function Container({
 }: ContainerProps) {
   return (
     <div
-      className={`${toggled ? "bg-[#0c0c0c]/2" : "bg-[#f3f4f6]/2"} bg-no-repeat backdrop-blur-md shadow-sm mx-auto mt-3 lg:mt-6 p-4 flex justify-center items-center ${rounded} ${height} ${width}`}
+      className={`${toggled ? "bg-[#0c0c0c]/2" : "bg-[#f3f4f6]/2"} bg-no-repeat mx-auto mt-3 lg:mt-6 p-4 flex justify-center items-center ${rounded} ${height} ${width}`}
     >
       {children}
     </div>

@@ -95,7 +95,7 @@ const Projects = ({ toggled }: ProjectProps) => {
                 "React Native",
                 "JavaScript",
                 "NodeMCU",
-                "Arduino IOT Cloud",
+                "Arduino IoT Cloud",
               ]}
               link="https://drive.google.com/drive/folders/1EB3Ue_tCs3PlpLI2dJo68rhIV2ioyCZ-?usp=sharing"
             />

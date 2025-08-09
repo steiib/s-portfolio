@@ -12,7 +12,7 @@ const About = ({ toggled }: AboutProps) => {
     toggled,
     height: "h-16 lg:h-32",
     width: "w-11/12 lg:w-10/12",
-    rounded: "rounded-3xl",
+    rounded: "rounded-2xl",
   };
 
   const devIcon = (src: string, label: string) => (
