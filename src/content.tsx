@@ -11,6 +11,13 @@ function Content() {
   const [showNavbar, setShowNavbar] = useState(false);
   const heroRef = useRef<HTMLDivElement | null>(null);
 
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
   // Dark/Light Theme
   useEffect(() => {
     document.body.classList.toggle("bg-toggled", toggled);

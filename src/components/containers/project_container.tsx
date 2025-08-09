@@ -28,7 +28,11 @@ function Projects({
       className="relative rounded-b-md bg-no-repeat"
       style={{ backgroundImage: background }}
     >
-      <Container toggled={toggled} height="h-55 lg:h-80" rounded="rounded-md">
+      <Container
+        toggled={toggled}
+        height="h-55 lg:h-80 w-auto"
+        rounded="rounded-md"
+      >
         <div className="relative w-full h-full">
           {/* Title and Subtitle */}
           <div className="absolute top-2 left-2 lg:top-2 lg:left-8 text-left">

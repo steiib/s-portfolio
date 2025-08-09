@@ -90,7 +90,7 @@ function Hero({ toggled }: HeroProps) {
 
       {/* Call to Action Button */}
       <div
-        className="absolute bottom-30 w-10 lg:relative lg:bottom-40 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
+        className="absolute bottom-30 w-10 lg:relative lg:bottom-35 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
         onClick={() => {
           document
             .getElementById("about")

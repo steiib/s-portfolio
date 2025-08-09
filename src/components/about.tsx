@@ -10,7 +10,8 @@ const About = ({ toggled }: AboutProps) => {
 
   const ContainerProps = {
     toggled,
-    height: "h-20 lg:h-35",
+    height: "h-16 lg:h-32",
+    width: "w-11/12 lg:w-10/12",
     rounded: "rounded-3xl",
   };
 
@@ -61,7 +62,7 @@ const About = ({ toggled }: AboutProps) => {
       )}
 
       {/* Languages */}
-      <div className="text-xl lg:text-4xl mt-10 lg:mt-20 font-bold">
+      <div className="text-xl lg:text-4xl mt-8 lg:mt-16 font-bold">
         <p>Languages</p>
       </div>
       <Container {...ContainerProps}>
