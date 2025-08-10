@@ -17,6 +17,9 @@ export default function AnimatedCardWrapper({
       initial={{ scale: 0.9 }}
       animate={inView ? { scale: 1 } : { scale: 0.9 }}
       transition={{ duration: 0.35, ease: "easeInOut" }}
+      style={{
+        pointerEvents: inView ? "auto" : "none",
+      }}
     >
       {children}
     </motion.div>

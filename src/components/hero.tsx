@@ -40,37 +40,37 @@ function Hero({ toggled }: HeroProps) {
         id="home"
         className={`${
           toggled ? "text-black" : "text-white"
-        } relative min-h-screen flex flex-col justify-center items-center max-w-md lg:max-w-4xl mx-auto text-center`}
+        } relative min-h-screen flex flex-col justify-center items-center mx-auto text-center`}
       >
-        <div className="-mt-15 lg:mt-0 hover:scale-115 hover:tracking-widest transition-all duration-400 cursor-default">
-          {/* Top Text */}
+        <div className="hover:scale-115 transition-all duration-350 cursor-default">
           <motion.div
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <p className="text-2xl lg:text-3xl font-medium">Hi, I'm</p>
+            <p className="text-2xl mb-1 lg:mb-2 lg:text-3xl font-medium">
+              Hi, I'm
+            </p>
           </motion.div>
-
           {/* Background Image */}
           <div
             onMouseMove={handleMouseMove}
             onMouseLeave={resetTransform}
-            className="relative w-full h-auto mx-auto block mt-1 lg:mt-5 transition-transform duration-40"
+            className="relative transition-transform duration-40"
             style={{ transform: transformStyle }}
           >
             {/* Desktop Image */}
             <img
               src={toggled ? wave_2 : wave_1}
               alt="NameBG"
-              className="w-full h-auto mx-auto pointer-events-none rounded-xs hidden lg:block"
+              className="max-w-5xl h-auto mx-auto pointer-events-none rounded-xs hidden lg:block"
             />
 
             {/* Mobile Image */}
             <img
               src={toggled ? mwave_2 : mwave_1}
               alt="NameBG"
-              className="w-9/12 h-auto mx-auto pointer-events-none rounded-xs block lg:hidden"
+              className="w-8/12 max-w-md h-auto mx-auto pointer-events-none rounded-xs block lg:hidden"
             />
           </div>
 
@@ -80,7 +80,7 @@ function Hero({ toggled }: HeroProps) {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="text-4xl lg:text-8xl font-light tracking-widest relative -mt-6 lg:-mt-14 pointer-events-none z-10">
+            <div className="relative text-4xl lg:text-8xl font-light tracking-widest -mt-6 lg:-mt-14 pointer-events-none z-10">
               <p>S T E V E</p>
               <p>F A J I L A N</p>
             </div>
@@ -90,7 +90,7 @@ function Hero({ toggled }: HeroProps) {
 
       {/* Call to Action Button */}
       <div
-        className="absolute bottom-30 w-9 lg:relative lg:bottom-35 hover:scale-125 transition-all duration-300 cursor-pointer"
+        className="relative bottom-40 w-8 lg:w-10 lg:relative lg:bottom-25 hover:scale-125 transition-all duration-300 cursor-pointer"
         onClick={() => {
           document
             .getElementById("about")
