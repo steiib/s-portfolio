@@ -53,9 +53,7 @@ const About = ({ toggled }: AboutProps) => {
               working on the creative side of software development, especially
               front-end projects where I can focus on design and user
               experience. In my free time, I also create 3D models in Blender,
-              which I incorporate into design and prototyping projects,
-              delivering creative and practical solutions to technical
-              challenges.
+              which I incorporate into design and prototyping projects.
             </p>
           </div>
         </>

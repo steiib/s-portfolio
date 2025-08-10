@@ -43,15 +43,6 @@ function Hero({ toggled }: HeroProps) {
         } relative min-h-screen flex flex-col justify-center items-center mx-auto text-center`}
       >
         <div className="hover:scale-115 transition-all duration-350 cursor-default">
-          <motion.div
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            <p className="text-2xl mb-1 lg:mb-2 lg:text-3xl font-medium">
-              Hi, I'm
-            </p>
-          </motion.div>
           {/* Background Image */}
           <div
             onMouseMove={handleMouseMove}
