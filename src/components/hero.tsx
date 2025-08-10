@@ -56,7 +56,7 @@ function Hero({ toggled }: HeroProps) {
           <div
             onMouseMove={handleMouseMove}
             onMouseLeave={resetTransform}
-            className="relative w-full h-auto mx-auto block mt-1 lg:mt-5 transition-transform duration-50"
+            className="relative w-full h-auto mx-auto block mt-1 lg:mt-5 transition-transform duration-40"
             style={{ transform: transformStyle }}
           >
             {/* Desktop Image */}
@@ -70,7 +70,7 @@ function Hero({ toggled }: HeroProps) {
             <img
               src={toggled ? mwave_2 : mwave_1}
               alt="NameBG"
-              className="w-10/12 h-auto mx-auto pointer-events-none rounded-xs block lg:hidden"
+              className="w-9/12 h-auto mx-auto pointer-events-none rounded-xs block lg:hidden"
             />
           </div>
 
@@ -90,7 +90,7 @@ function Hero({ toggled }: HeroProps) {
 
       {/* Call to Action Button */}
       <div
-        className="absolute bottom-30 w-10 lg:relative lg:bottom-35 lg:w-9 hover:scale-125 transition-all duration-300 cursor-pointer"
+        className="absolute bottom-30 w-9 lg:relative lg:bottom-35 hover:scale-125 transition-all duration-300 cursor-pointer"
         onClick={() => {
           document
             .getElementById("about")

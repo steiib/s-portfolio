@@ -18,7 +18,7 @@ const Footer = ({ toggled }: Footer) => {
         <img
           src={toggled ? logo2_w : logo2_b}
           alt="Logo"
-          className="w-16 lg:w-40 hidden lg:flex"
+          className="w-16 lg:w-40 hidden lg:block"
         />
 
         {/* Contact Info */}

@@ -1,3 +1,4 @@
+import React, { useMemo } from "react";
 import Container from "./container";
 
 interface ContainerProps {
@@ -21,7 +22,7 @@ function Projects({
   tags,
   link,
 }: ContainerProps) {
-  const background = `radial-gradient(circle at center 250%, rgba(${gradientColor}), transparent 80%)`;
+  const background = `radial-gradient(circle at center 180%, rgba(${gradientColor}), transparent 70%)`;
 
   return (
     <div
@@ -74,7 +75,7 @@ function Projects({
             key={index}
             src={src}
             alt={`${title} Preview ${index + 1}`}
-            className="w-80 lg:w-170 rounded-xs brightness-90 hover:brightness-100 hover:scale-103 duration-200 transition-all"
+            className="w-80 lg:w-170 rounded-xs hover:scale-105 duration-200 transition-all"
           />
         ))}
       </div>

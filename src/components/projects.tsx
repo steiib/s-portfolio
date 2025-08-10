@@ -90,7 +90,7 @@ const Projects = ({ toggled }: ProjectProps) => {
               description="A remote-controlled bot that sprays insecticide, vacuums dust, detects obstacles, and provides real-time system status. It features 180° sprayer and camera movement and detects gas presence in the area."
               images={[gastrobot_1, gastrobot_2]}
               toggled={toggled}
-              gradientColor="158,149,63"
+              gradientColor="168,135,50"
               tags={[
                 "React Native",
                 "JavaScript",
