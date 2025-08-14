@@ -118,7 +118,7 @@ const Projects = ({ toggled }: ProjectProps) => {
             <ProjectCard
               title="KeyChase"
               subtitle="Arduino-Based Anti-theft Keychain"
-              description="A portable security device for personal belongings that detects motion, connects via Bluetooth, and sends instant alerts. Its mobile app displays real-time status, device direction, and allows remote alarm activation."
+              description="A portable security device for personal belongings that detects motion, connects via Bluetooth, and sends instant alerts. Its mobile app includes real-time status, direction, remote alarm activation."
               images={[keychase_1, keychase_2]}
               toggled={toggled}
               gradientColor="221,224,206"
