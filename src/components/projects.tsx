@@ -5,6 +5,8 @@ import fourtitude_1 from "../images/fourtitude_1.png";
 import fourtitude_2 from "../images/fourtitude_2.png";
 import palengke_1 from "../images/palengke1.png";
 import palengke_2 from "../images/palengke2.png";
+import keychase_1 from "../images/keychase1.png";
+import keychase_2 from "../images/keychase2.png";
 import gastrobot_1 from "../images/gastrobot2.png";
 import gastrobot_2 from "../images/gastrobot1.png";
 
@@ -81,7 +83,7 @@ const Projects = ({ toggled }: ProjectProps) => {
         transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="relative mb-50 lg:mb-105">
+        <div className="relative mb-40 lg:mb-75">
           {" "}
           <CardWrapper>
             <ProjectCard
@@ -98,6 +100,30 @@ const Projects = ({ toggled }: ProjectProps) => {
                 "Arduino IoT Cloud",
               ]}
               link="https://drive.google.com/drive/folders/1EB3Ue_tCs3PlpLI2dJo68rhIV2ioyCZ-?usp=sharing"
+            />
+          </CardWrapper>
+        </div>
+      </motion.div>
+
+      {/* Project 4 */}
+      <motion.div
+        initial={{ x: 100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="relative mb-50 lg:mb-105">
+          {" "}
+          <CardWrapper>
+            <ProjectCard
+              title="KeyChase"
+              subtitle="Arduino-Based Anti-theft Keychain"
+              description="A portable security device for personal belongings that detects motion, connects via Bluetooth, and sends instant alerts. Its mobile app displays real-time status, device direction, and allows remote alarm activation."
+              images={[keychase_1, keychase_2]}
+              toggled={toggled}
+              gradientColor="221,224,206"
+              tags={["Embedded System", "Arduino Nano", "MIT App Inventor"]}
+              link="https://drive.google.com/drive/folders/1Bf0EeSz0W-cWva2WZ4AyWyzxUJWwsyHP?usp=sharing"
             />
           </CardWrapper>
         </div>
