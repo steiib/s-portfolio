@@ -12,7 +12,7 @@ const About = ({ toggled }: AboutProps) => {
     toggled,
     height: "h-16 lg:h-32",
     width: "w-11/12 lg:w-10/12",
-    rounded: "rounded-2xl",
+    rounded: "rounded-xl",
   };
 
   const devIcon = (src: string, label: string) => (
@@ -20,7 +20,7 @@ const About = ({ toggled }: AboutProps) => {
       <img
         src={`${src}?color=${iconColor}`}
         alt={label}
-        className="w-9 lg:w-18 transition-all duration-200 group-hover:-translate-y-3"
+        className="w-8 lg:w-16 transition-all duration-200 group-hover:-translate-y-3"
       />
       <div className="absolute top-full text-xs lg:text-[16px] font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
         {label}
@@ -60,7 +60,7 @@ const About = ({ toggled }: AboutProps) => {
       )}
 
       {/* Languages */}
-      <div className="text-xl lg:text-4xl mt-8 lg:mt-16 font-bold">
+      <div className="text-xl lg:text-4xl mt-9 lg:mt-18 font-bold">
         <p>Languages</p>
       </div>
       <Container {...ContainerProps}>
@@ -89,6 +89,10 @@ const About = ({ toggled }: AboutProps) => {
             {devIcon(
               "https://devicon-website.vercel.app/api/typescript/plain.svg",
               "TypeScript"
+            )}
+            {devIcon(
+              "https://devicon-website.vercel.app/api/javascript/plain.svg",
+              "JavaScript"
             )}
           </div>
         )}
