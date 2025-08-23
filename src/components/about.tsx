@@ -1,4 +1,3 @@
-import Container from "./containers/container";
 import { motion } from "motion/react";
 
 interface AboutProps {
@@ -8,19 +7,12 @@ interface AboutProps {
 const About = ({ toggled }: AboutProps) => {
   const iconColor = toggled ? "%23000000" : "%23FFFFFF";
 
-  const ContainerProps = {
-    toggled,
-    height: "h-16 lg:h-32",
-    width: "w-11/12 lg:w-10/12",
-    rounded: "rounded-xl",
-  };
-
   const devIcon = (src: string, label: string) => (
     <div className="flex flex-col items-center justify-center group relative">
       <img
         src={`${src}?color=${iconColor}`}
         alt={label}
-        className="w-8 lg:w-16 transition-all duration-200 group-hover:-translate-y-3"
+        className="w-9 lg:w-18 transition-all duration-200 group-hover:-translate-y-3"
       />
       <div className="absolute top-full text-xs lg:text-[16px] font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-200 pointer-events-none">
         {label}
@@ -43,7 +35,7 @@ const About = ({ toggled }: AboutProps) => {
     <>
       {Motion(
         <>
-          <div className="text-3xl lg:text-5xl font-bold mt-10 lg:mt-25">
+          <div className="text-3xl lg:text-5xl font-bold mt-16 lg:mt-32">
             <p>About Me</p>
           </div>
           <div className="text-md lg:text-2xl font-light mt-5 lg:mt-10">
@@ -60,12 +52,12 @@ const About = ({ toggled }: AboutProps) => {
       )}
 
       {/* Languages */}
-      <div className="text-xl lg:text-4xl mt-9 lg:mt-18 font-bold">
+      <div className="text-xl lg:text-4xl mt-10 lg:mt-20 font-bold">
         <p>Languages</p>
       </div>
-      <Container {...ContainerProps}>
+      <div className="mt-6 lg:mt-12">
         {Motion(
-          <div className="flex justify-center items-center gap-5 lg:gap-10">
+          <div className="flex justify-center items-center gap-4 lg:gap-8">
             {devIcon(
               "https://devicon-website.vercel.app/api/html5/plain.svg",
               "HTML5"
@@ -96,15 +88,15 @@ const About = ({ toggled }: AboutProps) => {
             )}
           </div>
         )}
-      </Container>
+      </div>
 
       {/* Frameworks */}
-      <div className="text-xl lg:text-4xl mt-6 lg:mt-15 font-bold">
+      <div className="text-xl lg:text-4xl mt-10 lg:mt-20 font-bold">
         <p>Frameworks / Libraries</p>
       </div>
-      <Container {...ContainerProps}>
+      <div className="mt-6 lg:mt-12">
         {Motion(
-          <div className="flex justify-center items-center gap-5 lg:gap-10">
+          <div className="flex justify-center items-center gap-4 lg:gap-8">
             {devIcon(
               "https://devicon-website.vercel.app/api/react/original.svg",
               "React.JS"
@@ -136,15 +128,15 @@ const About = ({ toggled }: AboutProps) => {
             </div>
           </div>
         )}
-      </Container>
+      </div>
 
       {/* Tools */}
-      <div className="text-xl lg:text-4xl mt-6 lg:mt-15 font-bold">
+      <div className="text-xl lg:text-4xl mt-10 lg:mt-20 font-bold">
         <p>Tools</p>
       </div>
-      <Container {...ContainerProps}>
+      <div className="mt-6 lg:mt-12">
         {Motion(
-          <div className="flex justify-center items-center gap-5 lg:gap-10">
+          <div className="flex justify-center items-center gap-4 lg:gap-8">
             {devIcon(
               "https://devicon-website.vercel.app/api/bash/plain.svg",
               "Bash"
@@ -184,7 +176,7 @@ const About = ({ toggled }: AboutProps) => {
             </div>
           </div>
         )}
-      </Container>
+      </div>
     </>
   );
 };
