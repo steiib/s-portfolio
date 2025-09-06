@@ -10,22 +10,30 @@ const Footer = ({ toggled }: Footer) => {
   return (
     <footer
       className={`${
-        toggled ? "bg-[#0c0c0c] text-white" : "bg-[#f3f4f6] text-black"
-      } py-2 lg:py-4`}
+        toggled ? "bg-[#e0e0e0] text-black" : "bg-[#1a1a1a] text-white"
+      } py-2`}
     >
-      <div className="relative flex items-center mx-auto w-full h-[10rem] lg:max-w-10/12 lg:h-[20rem]">
-        {/* Logo */}
-        <img
-          src={toggled ? logo2_w : logo2_b}
-          alt="Logo"
-          className="w-16 lg:w-40 hidden lg:block"
-        />
+      <div className="relative flex items-center mx-auto w-full h-[6rem] lg:max-w-11/12 lg:h-[12rem]">
+        <div className="flex items-center gap-7">
+          {/* Logo */}
+          <img
+            src={toggled ? logo2_b : logo2_w}
+            alt="Logo"
+            className="lg:w-40 hidden lg:block"
+          />
+
+          {/* Connect with Me*/}
+          <div className="hidden lg:flex flex-col">
+            <span className="font-medium lg:text-4xl tracking-widest">
+              CONNECT
+            </span>
+            <span className="font-light lg:text-3xl tracking-widest">WITH</span>
+            <span className="font-medium lg:text-4xl tracking-widest">ME</span>
+          </div>
+        </div>
 
         {/* Contact Info */}
-        <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center top-6 lg:top-20">
-          <div className="font-bold relative text-xl -top-4 lg:text-4xl lg:-top-12">
-            Connect with Me
-          </div>
+        <div className="absolute left-1/2 -translate-x-1/2 flex flex-col items-center top-3 lg:top-6">
           <div className="flex items-center gap-5 lg:gap-10">
             {/* LinkedIn */}
             <a
@@ -35,10 +43,10 @@ const Footer = ({ toggled }: Footer) => {
             >
               <img
                 src={`https://devicon-website.vercel.app/api/linkedin/plain.svg?color=%23${
-                  toggled ? "ffffff" : "000000"
+                  toggled ? "000000" : "ffffff"
                 }`}
                 alt="LinkedIn"
-                className="w-7 lg:w-14 hover:scale-115 transition-all duration-150"
+                className="w-8 lg:w-16 hover:scale-115 transition-all duration-150"
               />
             </a>
 
@@ -50,10 +58,10 @@ const Footer = ({ toggled }: Footer) => {
             >
               <img
                 src={`https://devicon-website.vercel.app/api/github/original.svg?color=%23${
-                  toggled ? "ffffff" : "000000"
+                  toggled ? "000000" : "ffffff"
                 }`}
                 alt="GitHub"
-                className="w-7 lg:w-14 hover:scale-115 transition-all duration-150"
+                className="w-8 lg:w-16 hover:scale-115 transition-all duration-150"
               />
             </a>
 
@@ -65,10 +73,10 @@ const Footer = ({ toggled }: Footer) => {
             >
               <img
                 src={`https://icongr.am/feather/instagram.svg?size=128&color=${
-                  toggled ? "ffffff" : "000000"
+                  toggled ? "000000" : "ffffff"
                 }`}
                 alt="Instagram"
-                className="w-7 lg:w-14 hover:scale-115 transition-all duration-150"
+                className="w-8 lg:w-16 hover:scale-115 transition-all duration-150"
               />
             </a>
 
@@ -80,21 +88,21 @@ const Footer = ({ toggled }: Footer) => {
             >
               <img
                 src={`https://icongr.am/material/steam.svg?size=128&color=${
-                  toggled ? "ffffff" : "000000"
+                  toggled ? "000000" : "ffffff"
                 }`}
                 alt="Steam"
-                className="w-7 lg:w-14 hover:scale-115 transition-all duration-150"
+                className="w-8 lg:w-16 hover:scale-115 transition-all duration-150"
               />
             </a>
           </div>
         </div>
         {/* Email, Resume, Location */}
-        <div className="absolute left-1/2 -translate-x-1/2 text-center font-medium tracking-widest bottom-11 w-full text-[11px] lg:bottom-20 lg:text-xl">
+        <div className="absolute left-1/2 -translate-x-1/2 text-center font-medium tracking-widest bottom-7 w-full text-[10px] lg:bottom-14 lg:text-[18px]">
           <button
             onClick={() => {
               navigator.clipboard.writeText("sfajilan27@gmail.com");
             }}
-            className="hover:text-gray-600 cursor-pointer transition-all duration-150"
+            className="hover:text-gray-500 cursor-pointer transition-all duration-150"
             title="Click to copy"
           >
             sfajilan27@gmail.com
@@ -104,7 +112,7 @@ const Footer = ({ toggled }: Footer) => {
             href={Resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-600 cursor-pointer transition-all duration-200"
+            className="hover:text-gray-500 cursor-pointer transition-all duration-200"
           >
             {" "}
             View Resume
