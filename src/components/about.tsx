@@ -151,6 +151,11 @@ const About = ({ toggled }: AboutProps) => {
             )}
 
             {devIcon(
+              "https://devicon-website.vercel.app/api/gitlab/plain.svg?",
+              "GitLab"
+            )}
+
+            {devIcon(
               "https://devicon-website.vercel.app/api/blender/original.svg",
               "Blender"
             )}
