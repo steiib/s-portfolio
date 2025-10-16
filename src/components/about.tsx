@@ -108,6 +108,11 @@ const About = ({ toggled }: AboutProps) => {
             )}
 
             {devIcon(
+              "https://devicon-website.vercel.app/api/vuejs/plain.svg",
+              "Vue.JS"
+            )}
+
+            {devIcon(
               "https://devicon-website.vercel.app/api/tailwindcss/plain.svg",
               "Tailwind"
             )}
