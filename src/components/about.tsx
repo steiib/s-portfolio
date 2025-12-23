@@ -117,6 +117,11 @@ const About = ({ toggled }: AboutProps) => {
               "Tailwind"
             )}
 
+            {devIcon(
+              "https://devicon-website.vercel.app/api/fastapi/plain.svg",
+              "FastAPI"
+            )}
+
             {/* Framer Motion Icon */}
             <div className="relative flex flex-col items-center group">
               <img
@@ -156,8 +161,13 @@ const About = ({ toggled }: AboutProps) => {
             )}
 
             {devIcon(
-              "https://devicon-website.vercel.app/api/gitlab/plain.svg?",
+              "https://devicon-website.vercel.app/api/gitlab/plain.svg",
               "GitLab"
+            )}
+
+            {devIcon(
+              "https://devicon-website.vercel.app/api/postgresql/plain.svg",
+              "PostgreSQL"
             )}
 
             {devIcon(
