@@ -40,12 +40,11 @@ const About = ({ toggled }: AboutProps) => {
           </div>
           <div className="text-md lg:text-2xl font-light mt-5 lg:mt-10">
             <p>
-              I am Steve Andrei Fajilan, a Computer Engineering student with
-              hands-on experience in software and hardware development. I enjoy
-              working on the creative side of software development, especially
-              front-end projects where I can focus on design and user
-              experience. In my free time, I also create 3D models in Blender,
-              which I incorporate into design and prototyping projects.
+              I'm Steve Andrei Fajilan, a Computer Engineering student with
+              experience in both software and hardware development. I'm
+              currently expanding into full-stack development, building
+              applications with a focus on clean design and user experience. In
+              my free time, I create 3D models using Blender.
             </p>
           </div>
         </>
@@ -90,7 +89,7 @@ const About = ({ toggled }: AboutProps) => {
         )}
       </div>
 
-      {/* Frameworks */}
+      {/* Frameworks and Libraries*/}
       <div className="text-xl lg:text-4xl mt-10 lg:mt-20 font-bold">
         <p>Frameworks / Libraries</p>
       </div>
@@ -120,6 +119,11 @@ const About = ({ toggled }: AboutProps) => {
             {devIcon(
               "https://devicon-website.vercel.app/api/fastapi/plain.svg",
               "FastAPI"
+            )}
+
+            {devIcon(
+              "https://devicon-website.vercel.app/api/sqlalchemy/plain.svg",
+              "SQLAlchemy"
             )}
 
             {/* Framer Motion Icon */}
@@ -168,6 +172,11 @@ const About = ({ toggled }: AboutProps) => {
             {devIcon(
               "https://devicon-website.vercel.app/api/postgresql/plain.svg",
               "PostgreSQL"
+            )}
+
+            {devIcon(
+              "https://devicon-website.vercel.app/api/storybook/plain.svg",
+              "Storybook"
             )}
 
             {devIcon(
